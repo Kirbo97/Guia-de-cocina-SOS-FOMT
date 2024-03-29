@@ -1,5 +1,5 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:980px) {
+@media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
 
@@ -20,9 +20,24 @@
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
-@media screen and (orientation:landscape){    
+@media screen and (max-height:600px) and  (orientation:landscape){    
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
+
+    li.gustos { 
+        margin: 4px 0 4px 0 !important;
+        text-align: left !important;
+    }
+    
+    ul.sep2 { 
+        padding: 0 0 0 40px !important;
+        margin: 0 !important;
+    }
+    
+    ul.sep3 { 
+        padding: 0 4px 0 40px !important;
+        margin: 0 !important;
+    }
 }
 
 html {
@@ -167,12 +182,17 @@ ul.sep1 {
 }
 
 ul.sep2 { 
-    padding: 0 0 0 80px;
+    padding: 0 0 0 100px;
     margin: 0;
 }
 
 ul.sep3 { 
-    padding: 0 4px 0 80px;
+    padding: 0 4px 0 100px;
+    margin: 0;
+}
+
+ul.horario { 
+    padding: 0 4px;
     margin: 0;
 }
 
@@ -192,8 +212,6 @@ li {
     margin: 8px 0 8px 8px;
 }
 
-
-  
 /* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
 .data{ margin:15px auto;}
 
@@ -203,9 +221,7 @@ td, th {
     border:2px solid #00aa25;
 }
 
-td.perso{ 
-    padding: 8px 4px 8px 18px;
-}
+td.perso{ padding: 8px 4px 8px 18px; }
 
 /* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
 th { 
