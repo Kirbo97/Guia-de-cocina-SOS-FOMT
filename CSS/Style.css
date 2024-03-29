@@ -2,6 +2,21 @@
 @media screen and (max-width:980px) {
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
+
+    li.gustos { 
+        margin: 4px 0 4px 0 !important;
+        text-align: left !important;
+    }
+    
+    ul.sep2 { 
+        padding: 0 0 0 40px !important;
+        margin: 0 !important;
+    }
+    
+    ul.sep3 { 
+        padding: 0 4px 0 40px !important;
+        margin: 0 !important;
+    }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -146,6 +161,21 @@ ul {
     margin-left: -.5em;
 }
 
+ul.sep1 { 
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+ul.sep2 { 
+    padding: 0 0 0 80px;
+    margin: 0;
+}
+
+ul.sep3 { 
+    padding: 0 4px 0 80px;
+    margin: 0;
+}
+
 /* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion */
 ul li:before {
     content: '\00273F'; /* La guion sera una flor */
@@ -159,15 +189,22 @@ li {
     margin-block-end: 0.5em; 
     margin-right: 0.5em;
     text-align: justify;
+    margin: 8px 0 8px 8px;
 }
+
+
   
 /* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
 .data{ margin:15px auto;}
 
 /* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
 td, th { 
-    padding: 4px 5px 0 5px; /*(arriba, derecha, abajo y izquierda)*/
+    padding: 4px 5px; /*(arriba, derecha, abajo y izquierda)*/
     border:2px solid #00aa25;
+}
+
+td.perso{ 
+    padding: 8px 4px 8px 18px;
 }
 
 /* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
