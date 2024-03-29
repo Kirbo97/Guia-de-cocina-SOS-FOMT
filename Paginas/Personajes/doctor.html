@@ -26,15 +26,15 @@
             <main>
 
                 <table class="data">
-                    <tr><th>Cumpleaños</th><td style=" padding: 0 4px 0 18px;">19 de otoño (primaria) o 25 de otoño (alternativa)</td></tr>
+                    <tr><th>Cumpleaños</th><td class="perso">19 de otoño (primaria) o 25 de otoño (alternativa)</td></tr>
 
-                    <tr><th style="width: 115px;">Amistad extra</th><td style=" padding: 0 4px 0 18px;">Gana +2500 cuando NO te desmayes durante un total de 15, 30, 45, 60 o 75 días seguidos. Se otorga un bono la primera vez que cumple con los criterios.</td></tr>
+                    <tr><th style="width: 115px;">Amistad extra</th><td class="perso">Gana +2500 cuando NO te desmayes durante un total de 15, 30, 45, 60 o 75 días seguidos. Se otorga un bono la primera vez que cumple con los criterios.</td></tr>
 
-                    <tr><th>Rival</th><td style=" padding: 0 4px 0 18px;">Elli</td></tr>
+                    <tr><th>Rival</th><td class="perso">Elli</td></tr>
 
                     <tr><th>Horario</th>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
+                            <ul class="horario">
                                 <li>Durante la mayor parte de la semana el Doctor estará dentro de su clínica, ya sea arriba o abajo.</li>
                                 <li>Los miércoles visitará el área junto a la mina del lago para buscar hierbas silvestres entre las 8:00 am y las 11:00 am, luego regresará a la clínica por un rato.</li>
                                 <li>De 13:00 a 16:00 estará en el segundo piso de la biblioteca y luego regresará a su clínica por el resto del día.</li>
@@ -52,7 +52,7 @@
                     <tr> <!-- Fasina -->
                         <th>Fasina</th>
                         <td style=" display: flex;">
-                            <ul class="sep1"><li>Leche normal (C/T)</li></ul>
+                            <ul class="sep1"><li class="gustos">Leche normal (C/T)</li></ul>
                         </td>
                     </tr>
 
@@ -60,45 +60,42 @@
                         <th>Encanta</th>
                         <td style=" display: flex;">
                             <ul class="sep1">
-                                <li>Brotes de bambú</li>
-                                <li>Hierba negra</li>
-                                <li>Hierba azul</li>
-                                <li>Flor mágica azul</li>
-                                <li>Hierba verde</li>
-                                <li>Miel</li>
-                                <li>Hierba morado</li>
-                                <li>Sopa de pescado</li>  
+                                <li class="gustos">Brotes de bambú</li>
+                                <li class="gustos">Hierba negra</li>
+                                <li class="gustos">Hierba azul</li>
+                                <li class="gustos">Flor mágica azul</li>
+                                <li class="gustos">Hierba verde</li>
+                                <li class="gustos">Miel</li>
+                                <li class="gustos">Hierba morado</li>
+                                <li class="gustos">Sopa de pescado</li> 
+                                <li class="gustos">Concentrado mixto</li>
+                                <li class="gustos">Batidos de frutas y verduras</li> 
                             </ul>
 
-                            <ul style=" padding: 0 0 0 70px; margin: 0;">
-                                <li>Pescado grande</li>
-                                <li>Pescado mediano</li>
-                                <li>Hierba naranja</li>
-                                <li>Hongo venenoso</li>
-                                <li>Hierba azul marino</li>
-                                <li>Hierba roja</li>
-                                <li>Flor mágica roja</li>
-                                <li>Estofado</li>
+                            <ul class="sep2">
+                                <li class="gustos">Pescado grande</li>
+                                <li class="gustos">Pescado mediano</li>
+                                <li class="gustos">Hierba naranja</li>
+                                <li class="gustos">Hongo venenoso</li>
+                                <li class="gustos">Hierba azul marino</li>
+                                <li class="gustos">Hierba roja</li>
+                                <li class="gustos">Flor mágica roja</li>
+                                <li class="gustos">Estofado</li>
+                                <li class="gustos">Concentrado de frutas</li>
+                                <li class="gustos">Mont Blanc</li>
                             </ul>
 
-                            <ul style=" padding: 0 0 0 70px; margin: 0;">
-                                <li>Hierba blanca</li>
-                                <li>Hierba amarilla</li>
-                                <li>Carpaccio</li>
-                                <li>Arroz con castañas</li>
-                                <li>Hojas de Elly</li>
-                                <li>Buñuelo de pescado</li>
-                                <li>Agua de uvas silvestres</li>
-                                <li>Arroz con marisco</li>
-                            </ul>
-
-                            <ul style=" padding: 0 10px 0 70px; margin: 0;">
-                                <li>Concentrado mixto</li>
-                                <li>Batidos de frutas y verduras</li>
-                                <li>Concentrado de frutas</li>
-                                <li>Mont Blanc</li>
-                                <li>Paella</li>
-                                <li>Castaña asada</li> 
+                            <ul class="sep3">
+                                <li class="gustos">Hierba blanca</li>
+                                <li class="gustos">Hierba amarilla</li>
+                                <li class="gustos">Carpaccio</li>
+                                <li class="gustos">Arroz con castañas</li>
+                                <li class="gustos">Hojas de Elly</li>
+                                <li class="gustos">Buñuelo de pescado</li>
+                                <li class="gustos">Agua de uvas silvestres</li>
+                                <li class="gustos">Arroz con marisco</li>
+                                <li class="gustos">Paella</li>
+                                <li class="gustos">Castaña asada</li> 
                             </ul>
                         </td>
                     </tr>
@@ -107,70 +104,62 @@
                         <th>Gusta</th> 
                         <td style=" display: flex;">
                             <ul class="sep1">
-                                <li>Castaña</li>
-                                <li>Huevo (C/T)</li>
-                                <li>Queso (C/T)</li>
-                                <li>Leche (café, fruta y fresa) (C/T)</li>
-                                <li>Judía azuki</li>
-                                <li>Manzana UMSE</li>
-                                <li>Manzana</li>
-                                <li>Chile</li>
-                                <li>zanahoria</li>
-                                <li>Cebolla</li>
-                                <li>Maíz</li>
-                                <li>Patata</li>
-                                <li>Calabaza</li>
-                                <li>Zaru soba</li>
+                                <li class="gustos">Castaña</li>
+                                <li class="gustos">Huevo (C/T)</li>
+                                <li class="gustos">Queso (C/T)</li>
+                                <li class="gustos">Leche (café, fruta y fresa) (C/T)</li>
+                                <li class="gustos">Judía azuki</li>
+                                <li class="gustos">Manzana UMSE</li>
+                                <li class="gustos">Manzana</li>
+                                <li class="gustos">Chile</li>
+                                <li class="gustos">zanahoria</li>
+                                <li class="gustos">Cebolla</li>
+                                <li class="gustos">Maíz</li>
+                                <li class="gustos">Patata</li>
+                                <li class="gustos">Calabaza</li>
+                                <li class="gustos">Zaru soba</li>
+                                <li class="gustos">Potaje de calabaza</li>
+                                <li class="gustos">Quiche</li>
+                                <li class="gustos">Maíz asado</li>
+                                <li class="gustos">Naranja</li>
                             </ul>
 
-                            <ul style=" padding: 0 0 0 70px; margin: 0;">
-                                <li>Fresa</li>
-                                <li>Mansana SMDF</li>
-                                <li>Espinacas</li>
-                                <li>Tomate</li>
-                                <li>Nabo</li>
-                                <li>Huevo de las termas</li>
-                                <li>Mansana asada</li>
-                                <li>Harina de trigo sarraceno</li>
-                                <li>Pescado pequeño</li>
-                                <li>Arroz con bambú</li>
-                                <li>Palbochae</li>
-                                <li>Zumo de piña</li>
-                                <li>Acqua pazza</li>
-                                <li>Soba con tempura</li>
+                            <ul class="sep2">
+                                <li class="gustos">Fresa</li>
+                                <li class="gustos">Mansana SMDF</li>
+                                <li class="gustos">Espinacas</li>
+                                <li class="gustos">Tomate</li>
+                                <li class="gustos">Nabo</li>
+                                <li class="gustos">Huevo de las termas</li>
+                                <li class="gustos">Mansana asada</li>
+                                <li class="gustos">Harina de trigo sarraceno</li>
+                                <li class="gustos">Pescado pequeño</li>
+                                <li class="gustos">Arroz con bambú</li>
+                                <li class="gustos">Palbochae</li>
+                                <li class="gustos">Zumo de piña</li>
+                                <li class="gustos">Acqua pazza</li>
+                                <li class="gustos">Soba con tempura</li>
+                                <li class="gustos">Té relajante</li>
+                                <li class="gustos">Pizza Margarita picante</li>
+                                <li class="gustos">Filete de pimienta picante</li>
+                                <li class="gustos">Manzana HMMR</li>
                             </ul>
 
-                            <ul style=" padding: 0 0 0 70px; margin: 0;">
-                                <li>Huevos benedictos</li>
-                                <li>Kétchup</li>
-                                <li>Puré De Patatas</li>
-                                <li>Dorayaki</li>
-                                <li>Arroz con hongo pino</li>
-                                <li>Gratinado de setas</li>
-                                <li>Arroz con setas</li>
-                                <li>Pasta a la napolitana</li>
-                                <li>Oden</li>
-                                <li>Filete a la pimienta</li>
-                                <li>Cáscara confitada</li>
-                                <li>Pastel de naranja</li>
-                                <li>Orangette</li>
-                                <li>Torta de fresa</li>
-                            </ul>
-
-                            <ul style=" padding: 0 10px 0 70px; margin: 0;">
-                                
-                                <li>Potaje de calabaza</li>
-                                <li>Quiche</li>
-                                <li>Maíz asado</li>
-                                <li>Té relajante</li>
-                                <li>Pizza Margarita picante</li>
-                                <li>Filete de pimienta picante</li>
-                                <li>Piña</li>
-                                <li>Ramen picante</li>
-                                <li>Sándwich picante</li>
-                                <li>Salteado de verduras picantes</li>
-                                <li>Manzana HMMR</li>
-                                <li>Naranja</li>
+                            <ul class="sep3">
+                                <li class="gustos">Huevos benedictos</li>
+                                <li class="gustos">Kétchup</li>
+                                <li class="gustos">Puré De Patatas</li>
+                                <li class="gustos">Dorayaki</li>
+                                <li class="gustos">Arroz con hongo pino</li>
+                                <li class="gustos">Gratinado de setas</li>
+                                <li class="gustos">Arroz con setas</li>
+                                <li class="gustos">Pasta a la napolitana</li>
+                                <li class="gustos">Oden</li>
+                                <li class="gustos">Filete a la pimienta</li>
+                                <li class="gustos">Cáscara confitada</li>
+                                <li class="gustos">Pastel de naranja</li>
+                                <li class="gustos">Orangette</li>
+                                <li class="gustos">Torta de fresa</li>
                             </ul>
                         </td>
                     </tr>
@@ -179,33 +168,33 @@
                         <th style="width: 95px;">Desagrado</th> 
                         <td style=" display: flex;">
                             <ul class="sep1">
-                                <li>Todos los minerales y gemas.</li>
-                                <li>Rama</li>
-                                <li>Alimento para pollos</li>
-                                <li>Bota de goma</li>
-                                <li>Espinas de pescado</li>
-                                <li>Forraje</li>
-                                <li>Madera</li>
+                                <li class="gustos">Todos los minerales y gemas.</li>
+                                <li class="gustos">Rama</li>
+                                <li class="gustos">Alimento para pollos</li>
+                                <li class="gustos">Bota de goma</li>
+                                <li class="gustos">Espinas de pescado</li>
+                                <li class="gustos">Forraje</li>
+                                <li class="gustos">Madera</li>
                             </ul>
 
-                            <ul style=" padding: 0 0 0 70px; margin: 0;">
-                                <li>Tesoro Pirata</li>
-                                <li>Lata vacía</li>
-                                <li>Baumkuchen</li>
-                                <li>Torta</li>
-                                <li>Galletas con chocolate</li>
-                                <li>Tortita</li>
-                                <li>Articuos de mujer (carrera de caballo)</li>
+                            <ul class="sep2">
+                                <li class="gustos">Tesoro Pirata</li>
+                                <li class="gustos">Lata vacía</li>
+                                <li class="gustos">Baumkuchen</li>
+                                <li class="gustos">Torta</li>
+                                <li class="gustos">Galletas con chocolate</li>
+                                <li class="gustos">Tortita</li>
+                                <li class="gustos">Articuos de mujer (carrera de caballo)</li>
                             </ul>
 
-                            <ul style=" padding: 0 10px 0 70px; margin: 0;">
-                                <li>Palomitas</li>
-                                <li>Pizza margarita</li>
-                                <li>Patatas fritas</li>
-                                <li>Pelota para mascotas</li>
-                                <li>Hierba</li>
-                                <li>Madera Dorada</li>
-                                <li>Fósil Antiguo</li>
+                            <ul class="sep3">
+                                <li class="gustos">Palomitas</li>
+                                <li class="gustos">Pizza margarita</li>
+                                <li class="gustos">Patatas fritas</li>
+                                <li class="gustos">Pelota para mascotas</li>
+                                <li class="gustos">Hierba</li>
+                                <li class="gustos">Madera Dorada</li>
+                                <li class="gustos">Fósil Antiguo</li>
                             </ul>
                         </td>
                     </tr>
@@ -225,11 +214,11 @@
                     <tr>
                         <td><center><img src="../../IMG/Corazon/cin.JPG" width="50" height="50"></center></td>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
-                                <li>Entra a la clínica</li>
-                                <li>Puede ser Lunes, Jueves o Sábado</li>
-                                <li>9:00 am a 4:00 pm</li>
-                                <li>Cualquier clima</li>
+                            <ul class="horario">
+                                <li class="gustos">Entra a la clínica</li>
+                                <li class="gustos">Puede ser Lunes, Jueves o Sábado</li>
+                                <li class="gustos">9:00 am a 4:00 pm</li>
+                                <li class="gustos">Cualquier clima</li>
                             </ul>
                         </td>
                         <td style=" padding: 0 10px"><b>Opción 1:</b> Un poco de medicina nunca hace daño a nadie...</td>
@@ -244,13 +233,13 @@
                     <tr>
                         <td><center><img src="../../IMG/Corazon/cne.JPG" width="50" height="50"></center></td>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
-                                <li>Entra a la clínica</li>
-                                <li>Puede ser Domingo, Martes, Viernes o Sábado</li>
-                                <li>9:00 am a 4:00 pm</li>
-                                <li>Cualquier clima</li>
-                                <li>Has visto el evento de Introducción</li>
-                                <li>El DOctor tiene un color de corazón negro (5.000 LP) o superior.</li>
+                            <ul class="horario">
+                                <li class="gustos">Entra a la clínica</li>
+                                <li class="gustos">Puede ser Domingo, Martes, Viernes o Sábado</li>
+                                <li class="gustos">9:00 am a 4:00 pm</li>
+                                <li class="gustos">Cualquier clima</li>
+                                <li class="gustos">Has visto el evento de Introducción</li>
+                                <li class="gustos">El DOctor tiene un color de corazón negro (5.000 LP) o superior.</li>
                             </ul>
                         </td>
                         <td style=" padding: 0 10px"><b>Opción 2:</b> ¡Oh, sí! ¡Sustancias no probadas!</td>
@@ -265,14 +254,14 @@
                     <tr>
                         <td><center><img src="../../IMG/Corazon/cmo.JPG" width="50" height="50"></center></td>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
-                                <li>DEntra a la clínica.</li>
-                                <li>Puede ser Domingo, Martes, Viernes o Sábado.</li>
-                                <li>9:00 am a 4:00 pm</li>
-                                <li>Debe ser soleado o lluvioso</li>
-                                <li>Tener un espacio vacío para objetos en tu mochila.</li>
-                                <li>Has visto el evento de corazón negro</li>
-                                <li>El Doctor tiene un color de corazón púrpura (10.000 LP) o superior.</li>
+                            <ul class="horario">
+                                <li class="gustos">DEntra a la clínica.</li>
+                                <li class="gustos">Puede ser Domingo, Martes, Viernes o Sábado.</li>
+                                <li class="gustos">9:00 am a 4:00 pm</li>
+                                <li class="gustos">Debe ser soleado o lluvioso</li>
+                                <li class="gustos">Tener un espacio vacío para objetos en tu mochila.</li>
+                                <li class="gustos">Has visto el evento de corazón negro</li>
+                                <li class="gustos">El Doctor tiene un color de corazón púrpura (10.000 LP) o superior.</li>
                             </ul>
                         </td>
                         <td style=" padding: 0 10px"><b>Opción 1:</b> ¿Qué podría ser?</td>
@@ -287,13 +276,13 @@
                     <tr>
                         <td><center><img src="../../IMG/Corazon/caz.JPG" width="50" height="50"></center></td>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
-                                <li>Entra a la clínica</li>
-                                <li>Puede ser Lunes, viernes o sábado.</li>
-                                <li>9:00 am a 4:00 pm</li>
-                                <li>Cualquier clima</li>
-                                <li>Has visto el evento de corazón púrpura</li>
-                                <li>El Doctor tiene un color de corazón azul (20.000 LP) o superior.</li>
+                            <ul class="horario">
+                                <li class="gustos">Entra a la clínica</li>
+                                <li class="gustos">Puede ser Lunes, viernes o sábado.</li>
+                                <li class="gustos">9:00 am a 4:00 pm</li>
+                                <li class="gustos">Cualquier clima</li>
+                                <li class="gustos">Has visto el evento de corazón púrpura</li>
+                                <li class="gustos">El Doctor tiene un color de corazón azul (20.000 LP) o superior.</li>
                             </ul>
                         </td>
                         <td style=" padding: 0 10px"><b>Opción 1:</b> Abre tu corazón.</td>
@@ -308,14 +297,14 @@
                     <tr>
                         <td><center><img src="../../IMG/Corazon/cam.JPG" width="50" height="50"></center></td>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
-                                <li>Sal de tu casa de campo.</li>
-                                <li>Cualquier día de la semana.</li>
-                                <li>10:00 am a 1:00 pm</li>
-                                <li>Debe ser soleado</li>
-                                <li>Has visto el evento de corazón azul</li>
-                                <li>Le has regalado al Doctor una flor preservada.</li>
-                                <li>El Doctor tiene un color de corazón amarillo (40.000 LP) o superior.</li>
+                            <ul class="horario">
+                                <li class="gustos">Sal de tu casa de campo.</li>
+                                <li class="gustos">Cualquier día de la semana.</li>
+                                <li class="gustos">10:00 am a 1:00 pm</li>
+                                <li class="gustos">Debe ser soleado</li>
+                                <li class="gustos">Has visto el evento de corazón azul</li>
+                                <li class="gustos">Le has regalado al Doctor una flor preservada.</li>
+                                <li class="gustos">El Doctor tiene un color de corazón amarillo (40.000 LP) o superior.</li>
                             </ul>
                         </td>
                         <td style=" padding: 0 10px"><b>Opción 2:</b> Escribe la receta la próxima vez.</td>
@@ -330,13 +319,13 @@
                     <tr>
                         <td><center><img src="../../IMG/Corazon/cna.JPG" width="50" height="50"></center></td>
                         <td>
-                            <ul style=" padding: 0 4px 0 10px; margin: 0;">
-                                <li>Entra a la clínica.</li>
-                                <li>Debe ser Domingo, Martes, Jueves o Sábado</li>
-                                <li>9:00 am a 4:00 pm</li>
-                                <li>Cualquier clima</li>
-                                <li>Has visto el evento de corazón amarillo</li>
-                                <li>El Doctor tiene un color de corazón naranja (50.000 LP) o superior.</li>
+                            <ul class="horario">
+                                <li class="gustos">Entra a la clínica.</li>
+                                <li class="gustos">Debe ser Domingo, Martes, Jueves o Sábado</li>
+                                <li class="gustos">9:00 am a 4:00 pm</li>
+                                <li class="gustos">Cualquier clima</li>
+                                <li class="gustos">Has visto el evento de corazón amarillo</li>
+                                <li class="gustos">El Doctor tiene un color de corazón naranja (50.000 LP) o superior.</li>
                             </ul>
                         </td>
                         <td style=" padding: 0 10px"><b>Opción 2:</b> Su arduo trabajo dio sus frutos.</td>
