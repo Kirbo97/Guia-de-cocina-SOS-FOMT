@@ -24,7 +24,7 @@
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
-@media screen and (max-height:600px) and  (orientation:landscape){    
+@media screen and (max-height:600px) and (orientation:landscape){    
     h1 { font-size: 2.18em !important; }
     header{ height: 3.18em !important; }
 
@@ -134,6 +134,26 @@ h1:before {
     color: #E83; /*el guion sera de color naranja*/
 }
 
+.primavera:before  {
+    content: '\1F338'; /*(La guion sera una flor)*/
+    font-size: 3em;
+}
+
+.verano:before  {
+    content: '\1F31E'; /*(La guion sera una flor)*/
+    font-size: 3em;
+}
+
+.otoño:before  {
+    content: '\1F342'; /*(La guion sera una flor)*/
+    font-size: 3em;
+}
+
+.invierno:before  {
+    content: '\26C4'; /*(La guion sera una flor)*/
+    font-size: 2.8em;
+}
+
 /* evitar que los titulos se expandan fuera del contenido */
 h2 {
     border-bottom: 2px solid #09F;
@@ -173,7 +193,7 @@ h3 {
     border-radius:10px;
 }
 
-/* se crea la clase "screenshot" para que se ocupe de crear un cuadro cverde para la imagen*/
+/* se crea la clase "screenshot" para que se ocupe de crear un marco cverde para la imagen*/
 .screenshot {
     border: 3px solid #228877;
     border-radius:15px; 
@@ -267,6 +287,9 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     margin:10px;
 }
 
+/* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
+.box_marriage img { max-width:100%; height:auto; }
+
 /* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
 .box_gallinero {
     max-width:200px; 
@@ -289,6 +312,3 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     height:auto; 
     display:inline-block; 
     margin:10px;}
-
-/* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
-.box_marriage img { max-width:100%; height:auto; }
