@@ -1,3 +1,7 @@
+/* ********************** */
+/*  Diseños para Moviles  */
+/* ********************** */
+
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
@@ -40,17 +44,24 @@
     }
 }
 
+/* ******************* */
+/*  Diseños generales  */
+/* ******************* */
+
+/* La etiqueta "html" tendra cierta carasteristica */
 html {
     font-size:100%;
     margin:0px; 
     padding:0px; 
 }
 
+/* La etiqueta "body" tendra cierta carasteristica */
 body {
     background: url('../IMG/site_background.jpg') repeat; 
     background-attachment: fixed;
 }
 
+/* La etiqueta "header" tendra cierta carasteristica */
 header{
     border-bottom:2px solid #00AA88;  
     height: 3.5em;
@@ -58,6 +69,7 @@ header{
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
+/* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
 header .icono {
     position: absolute;
     width: 38px; /* ajusto el ancho que tendra esta clase */
@@ -70,6 +82,7 @@ b {
     font-weight:800;
 }
 
+/* La etiqueta "p" tendra cierta carasteristica */
 p { text-align: justify; }
 
 /* clase "link" con propiedad de enlace y le quito la aparienci de hiperbinculo */
@@ -176,21 +189,25 @@ ul {
     margin-left: -.5em;
 }
 
+/* se crea la clase "sep1" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
 ul.sep1 { 
     padding: 0 0 0 10px;
     margin: 0;
 }
 
+/* se crea la clase "sep2" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
 ul.sep2 { 
     padding: 0 0 0 100px;
     margin: 0;
 }
 
+/* se crea la clase "sep3" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
 ul.sep3 { 
     padding: 0 4px 0 100px;
     margin: 0;
 }
 
+/* se crea la clase "horario" en la etiqueta "ul" para que se ocupe de posisionar el contenido de una lista */
 ul.horario { 
     padding: 0 4px;
     margin: 0;
@@ -239,7 +256,7 @@ tr:nth-child(odd) {background-color: #E8E8E8;}
 /* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
 tr:nth-child(even) {background-color: #FAFAFA;}
 
-/* se crea la ID "boxsort" para que se ocupe de posisionar la imagen a la derecha*/
+/* se crea la ID "boxsort" para que se ocupe de posisionar la imagen dentro de la caja*/
 #boxsort{ text-align:center;}
 
 /* se crea la clase "box_marriage" para que se ocupe de posisionar el contenido para los perfiles*/
@@ -250,6 +267,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     margin:10px;
 }
 
+/* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
 .box_gallinero {
     max-width:200px; 
     height:auto; 
@@ -257,6 +275,15 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     margin:10px;
 }
 
+/* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
+.box_mascota {
+    max-width:200px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px 17px;
+}
+
+/* se crea la clase "box_ganado" para que se ocupe de posisionar el contenido para el ganado*/
 .box_ganado {
     max-width: 270px; 
     height:auto; 
@@ -264,4 +291,4 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     margin:10px;}
 
 /* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
-.box_marriage img {max-width:100%; height:auto;}
+.box_marriage img { max-width:100%; height:auto; }
