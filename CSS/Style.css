@@ -242,13 +242,26 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 /* se crea la ID "boxsort" para que se ocupe de posisionar la imagen a la derecha*/
 #boxsort{ text-align:center;}
 
-/* se crea la clase "box_marriage" para que se ocupe de posisionar el contenido*/
+/* se crea la clase "box_marriage" para que se ocupe de posisionar el contenido para los perfiles*/
 .box_marriage {
     max-width:180px; 
     height:auto; 
     display:inline-block; 
     margin:10px;
 }
+
+.box_gallinero {
+    max-width:200px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px;
+}
+
+.box_ganado {
+    max-width: 270px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px;}
 
 /* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
 .box_marriage img {max-width:100%; height:auto;}
