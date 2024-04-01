@@ -112,7 +112,7 @@ p { text-align: justify; }
     font-size: 1em;
     height:100%;
     line-height: 1.5em;
-    margin:20px 50px; /*(arriba y abajo │ derecha y izquierda)*/
+    margin:50px 50px; /*(arriba y abajo │ derecha y izquierda)*/
     overflow:hidden; 
     padding: 20px;
     z-index:0;
@@ -298,6 +298,17 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     margin:10px;
 }
 
+/* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
+.box_inicio {
+    max-width:160px; 
+    height:auto; 
+    display:inline-block; 
+    margin:17px 17px;
+}
+
+/* La etiqueta "img" con la clase "box_inicio" para que se ocupe del tamaño de la imagen*/
+.box_inicio img { max-width:100%; height:auto; }
+
 /* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_mascota {
     max-width:200px; 
@@ -311,4 +322,5 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     max-width: 270px; 
     height:auto; 
     display:inline-block; 
-    margin:10px;}
+    margin:10px;
+}
