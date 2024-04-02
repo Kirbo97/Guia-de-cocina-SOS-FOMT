@@ -176,15 +176,19 @@ h2 {
 }
 
 /* evitar que los titulos se expandan fuera del contenido */
-h3 {
+h3 , summary {
 	border-bottom:none;
+    font-weight: bold;
 	color: #E83;
 	font-family: 'Ranchers', sans-serif;
 	font-size: 1.5em;
 	letter-spacing: 0.1em;
-	line-height: 1em;	
+	line-height: 1em;
+    margin: 24px 0;
 }
- 
+
+summary:focus-visible { outline:none; }
+
 /* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
 .right {
     float:right; 
