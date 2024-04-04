@@ -189,6 +189,11 @@ h3 , summary {
 
 summary:focus-visible { outline:none; }
 
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+	color: rgb(77, 208, 6);
+}
+
 /* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
 .right {
     float:right; 
