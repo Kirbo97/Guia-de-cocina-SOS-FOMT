@@ -343,3 +343,53 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     display:inline-block; 
     margin:10px;
 }
+
+/* ************** */
+/*  FINAL CUADRO  */
+/* ************** */
+
+/* defino que solo la etiqueta "footer" tendra tendra ciertas caracteristicas */
+footer {
+    border-top:4px solid #E83;
+    width: 100%;  /* ajusto el tamaño que tendra esta clase */
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+}
+
+/* defino que solo la etiqueta "section" tendra tendra ciertas caracteristicas */
+section.pie{
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+}
+
+/* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .copyright {
+    font-size: 22.5px; /* defino el tamaño del texto*/
+    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
+    margin:  14px auto 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .logo {
+    width: 40px; /* ajusto el tamaño que tendra esta clase */
+}
+
+/* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .enlace {
+    width: 40px; /* ajusto el tamaño que tendra esta clase */
+}
+
+/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
+.posision-pri {
+    margin: 0 0 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
+.posision-sec {
+    margin: 0 0 0 4.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
+.posision-ter {
+    margin: 0 auto 0 4.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
