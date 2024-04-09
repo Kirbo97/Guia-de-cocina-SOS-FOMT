@@ -7,9 +7,7 @@ function copiar(){
 function usar(perfil){
     var accederAnterior = ''; //inicializa la variable que se usara para obtener el dato
     accederAnterior = localStorage.getItem('anterior'); //acceder al valor 
-    let anterior = document.getElementById('atras'); //La imagen cambia
-
-    alert(accederAnterior);
+    let anterior = document.getElementById('atras'); //mi variable tendra una instancia de la etiqueta con la id
 
     if(accederAnterior == window.location.href){
 
