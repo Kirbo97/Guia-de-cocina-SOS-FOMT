@@ -3,7 +3,6 @@ function copiar(){
     localStorage.setItem('anterior',urlActual); //guarda el valor 
 }
 
-
 function usar(perfil){
     var accederAnterior = ''; //inicializa la variable que se usara para obtener el dato
     accederAnterior = localStorage.getItem('anterior'); //acceder al valor 
