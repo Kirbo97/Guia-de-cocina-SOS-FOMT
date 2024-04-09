@@ -189,6 +189,8 @@ h3 , summary {
     margin: 24px 0;
 }
 
+summary { cursor: pointer; }
+
 summary:focus-visible { outline:none; }
 
 details[open] > summary:first-of-type {
@@ -300,16 +302,16 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 /* se crea la ID "boxsort" para que se ocupe de posisionar la imagen dentro de la caja*/
 #boxsort{ text-align:center;}
 
-/* se crea la clase "box_marriage" para que se ocupe de posisionar el contenido para los perfiles*/
-.box_marriage {
+/* se crea la clase "box_matrimonio" para que se ocupe de posisionar el contenido para los perfiles*/
+.box_matrimonio {
     max-width:180px; 
     height:auto; 
     display:inline-block; 
     margin:10px;
 }
 
-/* La etiqueta "img" con la clase "box_marriage" para que se ocupe del tamaño de la imagen*/
-.box_marriage img { max-width:100%; height:auto; }
+/* La etiqueta "img" con la clase "box_matrimonio" para que se ocupe del tamaño de la imagen*/
+.box_matrimonio img { max-width:100%; height:auto; }
 
 /* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
 .box_gallinero {
@@ -332,6 +334,14 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_mascota {
+    max-width:200px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px 17px;
+}
+
+/* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
+.box_aldeanos {
     max-width:200px; 
     height:auto; 
     display:inline-block; 
