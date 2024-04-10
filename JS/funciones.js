@@ -1,20 +1,14 @@
-function copiar(){
-    var urlActual = window.location.href; // se usa para acceder a url actual
-    localStorage.setItem('anterior',urlActual); //guarda el valor 
+if(window.history.length < 4){
+    let b2 = document.getElementById('a1');  //el boton copiar se avilita
+    b2.style.display="inline";
+} else if(window.history.length > 3){
+    let b2 = document.getElementById('a2');  //el boton copiar se avilita
+    b2.style.display="inline";
 }
 
 function usar(perfil){
-    var accederAnterior = ''; //inicializa la variable que se usara para obtener el dato
-    accederAnterior = localStorage.getItem('anterior'); //acceder al valor 
-    let anterior = document.getElementById('atras'); //mi variable tendra una instancia de la etiqueta con la id
+    let ant = document.getElementById('a1'); //Creo una coneccion a la etiqueta con la ID
+        if(perfil == "can"){ ant.setAttribute("href","../../Otros/Casamiento.html"); }
+        if(perfil == "ald") { ant.setAttribute("href","../../Aldeanos.html"); }
 
-    if(accederAnterior == window.location.href){
-
-        if(perfil == "can"){ anterior.setAttribute("href","../../Otros/Casamiento.html"); } else
-
-        if(perfil == "ald"){ anterior.setAttribute("href","../../Aldeanos.html"); }
-
-    } else { 
-        anterior.setAttribute("href",accederAnterior); 
-    }
 }

@@ -5,7 +5,6 @@
         <title>Guia de Van de SOS-FOMT</title> 
         <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../../IMG/Otro/Kirbo.ico"/>
-        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </head>
     
     <body>
@@ -13,8 +12,10 @@
             <header> 
                 <h1>Van</h1> 
                 <a href="../../../index.html"><img src="../../../IMG/Otro/home.png"  alt="home" class="icono" style="right:80px;"></img></a>
-
-                <a onclick="usar('ald')" id="atras"  href=""><img src="../../../IMG/Otro/atras.png"  alt="atras" class="icono" style="right:160px;"></img></a>
+                
+                <a onclick="usar('ald')" id="a1" href="" style="display: none;"><img src="../../../IMG/Otro/atras.png"  alt="atras2" class="icono" style="right:160px;"></img></a>
+                
+                <img src="../../../IMG/Otro/atras.png" onclick="window.history.back()" id="a2" class="icono" alt="atras1" style="right:160px; display: none;"></img></a>
             </header>
 
             <img src="../../../IMG/Personajes/Aldeanos/Perfil/villager_van.jpg" class="right screenshot" loading="lazy" width="238" height="238" style="margin: 15px 0 0 20px;"/>
@@ -230,7 +231,7 @@
                     <tr><td style="text-align: center;">Disco 10</td><td>El décimo miércoles después de comprar el tocadiscos.</td><td style="text-align: center;">1.400 G</td></tr>
                 </table>
 
-                <p>Huang tiene 5 registros que puedes ganar con sus boletos de rifa del <a class="hiper" onclick="copiar()" href="../../../Paginas/Personajes/Candidatos/huang.html">juego de la manzana</a>. Los 5 registros restantes son premios del juego Piedra, Papel y Tijera de la Diosa de la Cosecha que se transmite por televisión dentro de tu villa de la ciudad y que Gotts puede construirlo. Como no es realista que puedas vencerla más de 50 veces seguidas, la mejor opción es comprar el artículo en la tienda secreta de Van.</p>
+                <p>Huang tiene 5 registros que puedes ganar con sus boletos de rifa del <a class="hiper" href="../../../Paginas/Personajes/Candidatos/huang.html">juego de la manzana</a>. Los 5 registros restantes son premios del juego Piedra, Papel y Tijera de la Diosa de la Cosecha que se transmite por televisión dentro de tu villa de la ciudad y que Gotts puede construirlo. Como no es realista que puedas vencerla más de 50 veces seguidas, la mejor opción es comprar el artículo en la tienda secreta de Van.</p>
 
                 <h2>El favorito de Van</h2>
 
@@ -301,5 +302,6 @@
                 </section>
             </footer>
         </div>
+        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </body>
 </html>

@@ -5,7 +5,6 @@
         <title>Guia de Ran de SOS-FOMT</title> 
         <link rel="stylesheet" href="../../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../../IMG/Otro/Kirbo.ico"/>
-        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </head>
     
     <body>
@@ -13,7 +12,10 @@
             <header> 
                 <h1>Ran</h1> 
                 <a href="../../../index.html"><img src="../../../IMG/Otro/home.png"  alt="home" class="icono" style="right:80px;"></img></a>
-                <a onclick="usar('can')" id="atras"  href=""><img src="../../../IMG/Otro/atras.png"  alt="atras" class="icono" style="right:160px;"></img></a>
+                               
+                <a onclick="usar('can')" id="a1" href="" style="display: none;"><img src="../../../IMG/Otro/atras.png"  alt="atras2" class="icono" style="right:160px;"></img></a>
+                
+                <img src="../../../IMG/Otro/atras.png" onclick="window.history.back()" id="a2" class="icono" alt="atras1" style="right:160px; display: none;"></img></a>
             </header>
 
             <img src="../../../IMG/Personajes/Candidatos/Perfil/marriage_ann.jpg" class="right screenshot" loading="lazy" width="238" height="238" style="margin: 15px 0 0 20px;"/>
@@ -411,5 +413,6 @@
                 </section>
             </footer>
         </div>
+        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </body>
 </html>
