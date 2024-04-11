@@ -143,36 +143,7 @@ h1 {
 h1:before {
     content: '\00273F'; /*(La guion sera una flor)*/
     color: #E83; /*el guion sera de color naranja*/
-}
-
-.primavera:before  {
-    content: '\1F338'; /*(La guion sera una flor)*/
-    font-size: 3em;
-}
-
-.verano:before  {
-    content: '\1F31E'; /*(La guion sera una flor)*/
-    font-size: 3em;
-}
-
-.otoño:before  {
-    content: '\1F342'; /*(La guion sera una flor)*/
-    font-size: 3em;
-}
-
-.invierno:before  {
-    content: '\26C4'; /*(La guion sera una flor)*/
-    font-size: 2.8em;
-}
-
-.cumpleaño:before  {
-    content: '\1F381'; /*(La guion sera una flor)*/
-    font-size: 3em;
-}
-
-.evento:before  {
-    content: '\1F388'; /*(La guion sera una flor)*/
-    font-size: 3em;
+    margin: 0 8px 0 0;
 }
 
 /* evitar que los titulos se expandan fuera del contenido */
@@ -269,7 +240,7 @@ ul.horario {
 
 /* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion */
 ul li:before {
-    content: '\00273F'; /* La guion sera una flor */
+    content: '\1F340'; /* La guion sera una flor */
     color: #093; /* El guion sera de color verde*/
     padding-right:8px; /* El guion tendra un espacio para la derecha*/
     font-size:1.2em; /* El guion tendra un tamaño*/
@@ -383,6 +354,65 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 }
 
 .box_ganado img { max-width:100%; height:auto; }
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
+.fasina:before  {
+    content: '\1F60D'; /*(La guion sera una flor)*/
+    font-size: 2.8em;
+}
+
+.encanta:before  {
+    content: '\1F604'; /*(La guion sera una flor)*/
+    font-size: 2.8em;
+}
+
+.gusta:before  {
+    content: '\1F642'; /*(La guion sera una flor)*/
+    font-size: 3em;
+}
+
+.desagrado:before  {
+    content: '\1F620'; /*(La guion sera una flor)*/
+    font-size: 3em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
+.primavera:before  {
+    content: '\1F338'; /*(La guion sera una flor de sakura)*/
+    font-size: 3em;
+}
+
+.verano:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 3em;
+}
+
+.otoño:before  {
+    content: '\1F342'; /*(La guion sera una hoja de otoño)*/
+    font-size: 3em;
+}
+
+.invierno:before  {
+    content: '\26C4'; /*(La guion sera un muñeco de nieve)*/
+    font-size: 2.8em;
+}
+
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
+
+.cumpleaño:before  {
+    content: '\1F381'; /*(La guion sera un regalo)*/
+    font-size: 3em;
+}
+
+.evento:before  {
+    content: '\1F388'; /*(La guion sera un globo)*/
+    font-size: 3em;
+}
+
+.cna:before  {
+    content: '\1F9E1'; /*(La guion sera un calendario)*/
+    font-size: 3em;
+}
 
 /* ************** */
 /*  FINAL CUADRO  */
