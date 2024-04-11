@@ -5,7 +5,6 @@
         <title>Guia de eventos aleatorio de SOS-FOMT</title> 
         <link rel="stylesheet" href="../../CSS/Style.css" type="text/css" />
         <link rel="shortcut icon" href="../../IMG/Otro/Kirbo.ico"/>
-        <script type="text/javascript" src="../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </head>
     
     <body>
@@ -14,13 +13,91 @@
             <header>
                 <h1>Eventos aleatorio</h1> 
                 <a href="../../index.html"><img src="../../IMG/Otro/home.png"  alt="home" class="icono" style="right:80px;"></img></a>
-                <a href="../../Paginas/Eventos.html"><img src="../../IMG/Otro/atras.png"  alt="atras" class="icono" style="right:160px;"></img></a>
+                               
+                <a onclick="usar('can')" id="a1" href="" style="display: none;"><img src="../../IMG/Otro/atras.png"  alt="atras2" class="icono" style="right:160px;"></img></a>
+                
+                <img src="../../IMG/Otro/atras.png" onclick="window.history.back()" id="a2" class="icono" alt="atras1" style="right:160px; display: none;"></img></a>
             </header>
 
             <main>
+                <details> <!-- Propio -->
+                    <summary class="pirn">Eventos del jugador</summary>
 
-                <details>
-                    <summary>El orgullo de un botánico</summary>
+                    <details>
+                        <summary>Escuela de cocina</summary>
+    
+                        <p>En este evento es recomendable tener todas las recetas porque los pretendientes masculinos o femeninos pedira que cocines algo para ellos.</p>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en tu casa de campo.</li>
+                                        <li class="gustos">8:00 am a 9:00 pm.</li>
+                                        <li class="gustos">Cualquier día de la semana.</li>
+                                        <li class="gustos">Debe ser Verano.</li>
+                                        <li class="gustos">Clima soleado (siempre está bien) o lluvioso (con límites).</li>
+                                        <li class="gustos">Pretendientes femeninos tienes 4 notas de amistad o más.</li>
+                                        <li class="gustos">Pretendientes masculinos tienes 4 notas de amistad o más.</li>
+                                        <li class="gustos">Tienes una cocina y de todos los utensilios de cocina.</li>
+                                        <li class="gustos">No tiene mascotas o tus mascotas están afuera.</li>
+                                        <li class="gustos">Si está casado con una persona del sexo opuesto, su cónyuge no debe estár en la casa, pero si es del mismo sexo puede estar en casa.</li>
+                                        <li class="gustos">Tu casa es de gran tamaño.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>   
+                    
+                    <details>
+                        <summary>Corte de energía</summary>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Dentro de tu casa de campo.</li>
+                                        <li class="gustos">6:00 am</li>
+                                        <li class="gustos">Debe ser verano o invierno</li>
+                                        <li class="gustos">Clima tormentoso.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                </details>
+
+                <details> <!-- Duende de las cosecha -->
+                    <summary class="pirn">Eventos de los Duende de las cosecha</summary>
+                    <h3>Fiesta del té de los duende de la cosecha</h3>
+                    <table class="data">
+                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                        <tr>
+                            <td>
+                                <ul class="horario">
+                                    <li class="gustos">Entra a la cabaña de los duendes de la cosecha.</li>
+                                    <li class="gustos">10:00 am a 5:00 pm.</li>
+                                    <li class="gustos">Cualquier día de la semana.</li>
+                                    <li class="gustos">Cualquier clima.</li>
+                                    <li class="gustos">Debe ser Primavera.</li>
+                                    <li class="gustos">Todos los duendes tienen 2 notas de amistad o más.</li>
+                                </ul>
+                            </td>
+                            <td style=" padding: 0 10px">No hay opciones.</td>
+                        </tr>
+                    </table>
+                </details>
+
+                <details> <!-- Basil -->
+                    <summary class="pirn">Eventos de Basil</summary>
+                    <h3>El orgullo de un botánico</h3>
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
@@ -41,8 +118,9 @@
                     </table>
                 </details>
 
-                <details>
-                    <summary>El amor de un niño</summary>
+                <details> <!-- Lillia -->
+                    <summary class="pirn">Eventos de Lillia</summary>
+                    <h3>El amor de un niño</h3>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -64,30 +142,57 @@
                         </tr>
                     </table>
                 </details>
+ 
+                <details> <!-- Carter -->
+                    <summary class="pirn">Eventos de Carter</summary>
 
-                <details>
-                    <summary>Un sueño divino</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <details>
+                        <summary>Un sueño divino</summary>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la iglesia.</li>
-                                    <li class="gustos">16:00 a 22:00.</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Carter tiene 4 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra a la iglesia.</li>
+                                        <li class="gustos">16:00 a 22:00.</li>
+                                        <li class="gustos">Debe ser Miercoles.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Carter tiene 4 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>El secreto de Carter</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra a la iglesia.</li>
+                                        <li class="gustos">16:00 a 22:00.</li>
+                                        <li class="gustos">Debe ser Lunes o Miercoles.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Debe ser Otoño.</li>
+                                        <li class="gustos">Carter tiene 8 notas de amistad o mas.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 1:</b> Sí.</td>
+                            </tr>
+                        </table>
+                    </details>
+
                 </details>
 
-                <details>
-                    <summary>Clase de postres de Anna</summary>
+                <details> <!-- Anna -->
+                    <summary class="pirn">Eventos de Anna</summary>
+                    <h3>Clase de postres de Anna</h3>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -106,9 +211,10 @@
                         </tr>
                     </table>
                 </details>
-
-                <details>
-                    <summary>El paseo de Brandon</summary>
+                
+                <details> <!-- Brandon -->
+                    <summary class="pirn">Eventos de Brandon</summary>
+                    <h3>El paseo de Brandon</h3>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -127,157 +233,86 @@
                     </table>
                 </details>
 
-                <details>
-                    <summary>El secreto de Carter</summary>
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                <details> <!-- Manna -->
+                    <summary class="pirn">Eventos de Manna</summary>
+
+                    <details>
+                        <summary>El argumento de Duke y Manna</summary>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la iglesia.</li>
-                                    <li class="gustos">16:00 a 22:00.</li>
-                                    <li class="gustos">Debe ser Lunes o Miercoles.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Debe ser Otoño.</li>
-                                    <li class="gustos">Carter tiene 8 notas de amistad o mas.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Sí.</td>
-                        </tr>
-                    </table>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la bodega Adge.</li>
+                                        <li class="gustos">20:10 a 22:00.</li>
+                                        <li class="gustos">Debe ser Sabado.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Debe ser Otoño 16 del año 1 o posterior.</li>
+                                        <li class="gustos">Duke tiene 4 notas de amistad o más.</li>
+                                        <li class="gustos">Manna tiene 8 notas de amistad o más.</li>
+                                        <li class="gustos">Cliff está trabajando en la bodega.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+    
+                    </details>
+
+                    <details>
+                        <summary>Las habilidades de compra de Manna</summary>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la tienda general de Jeff.</li>
+                                        <li class="gustos">13:50 a 16:00</li>
+                                        <li class="gustos">Debe ser Jueves o viernes.</li>
+                                        <li class="gustos">Debe ser lluvioso o nevado.</li>
+                                        <li class="gustos">Manna tiene 4 notas de amistad o más.</li>
+                                        <li class="gustos">Ya has visto el evento <b>Cosecha de Bodega de Otoño</b> y a Cliff NO le ofrecieron el trabajo.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>      
+                        <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>              
+                    </details>
+
+                    <details>
+                        <summary>Consulta de vida de Sasha</summary>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camine hasta la plaza Rosa.</li>
+                                        <li class="gustos">13:00 a 16:00</li>
+                                        <li class="gustos">No debe ser Lunes ni Martes.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Sasha tiene 4 notas de amistad o más.</li>
+                                        <li class="gustos">El evento <b>Cosecha de Bodega de Otoño</b> NO ha ocurrido todavía, o si ocurrio a Cliff NO se le ofreció el trabajo.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>       
+                        <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>  
+                    </details>
                 </details>
 
-                <details>
-                    <summary>Escuela de cocina</summary>
+                <details> <!-- Elly -->
+                    <summary class="pirn">Eventos de Elly</summary>
 
-                    <p>En este evento es recomendable tener todas las recetas porque los pretendientes masculinos o femeninos pedira que cocines algo para ellos.</p>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <h3>Estudios médicos de Elly</h3>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en tu casa de campo.</li>
-                                    <li class="gustos">8:00 am a 9:00 pm.</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">Clima soleado (siempre está bien) o lluvioso (con límites).</li>
-                                    <li class="gustos">Pretendientes femeninos tienes 4 notas de amistad o más.</li>
-                                    <li class="gustos">Pretendientes masculinos tienes 4 notas de amistad o más.</li>
-                                    <li class="gustos">Tienes una cocina y de todos los utensilios de cocina.</li>
-                                    <li class="gustos">No tiene mascotas o tus mascotas están afuera.</li>
-                                    <li class="gustos">Si está casado con una persona del sexo opuesto, su cónyuge no debe estár en la casa, pero si es del mismo sexo puede estar en casa.</li>
-                                    <li class="gustos">Tu casa es de gran tamaño.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details>
-
-                    <summary>Dudley y Duke discuten</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la posada.</li>
-                                    <li class="gustos">14:00 a 16:00.</li>
-                                    <li class="gustos">Debe ser Sabado.</li>
-                                    <li class="gustos">Debe ser lluvioso o nevado.</li>
-                                    <li class="gustos">Ran tiene 4 notas de amistad o más.</li>
-                                    <li class="gustos">No estás casado con Ran.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Intervenir.</td>
-                        </tr>
-                    </table>
-
-                </details>
-
-                <details>
-
-                    <summary>El diagnóstico erróneo del médico</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la clínica.</li>
-                                    <li class="gustos">13:30 a 16:00.</li>
-                                    <li class="gustos">Debe ser Martes.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">El doctor tiene 6 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-
-                </details>
-
-                <details>
-
-                    <summary>Batalla de bebida</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la posada.</li>
-                                    <li class="gustos">19:30 a 22:00.</li>
-                                    <li class="gustos">Debe ser Domingo.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Karen tiene 8 notas de amistad o más.</li>
-                                    <li class="gustos">No estás casado con Karen.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 2:</b> Claro.</td>
-                        </tr>
-                    </table>
-
-                </details>
-
-                <details>
-
-                    <summary>El argumento de Duke y Manna</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la bodega Adge.</li>
-                                    <li class="gustos">20:10 a 22:00.</li>
-                                    <li class="gustos">Debe ser Sabado.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser Otoño 16 del año 1 o posterior.</li>
-                                    <li class="gustos">Duke tiene 4 notas de amistad o más.</li>
-                                    <li class="gustos">Manna tiene 8 notas de amistad o más.</li>
-                                    <li class="gustos">Cliff está trabajando en la bodega.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-
-                </details>
-                
-                <details>
-
-                    <summary>Estudios médicos de Elly</summary>
-
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
@@ -295,34 +330,106 @@
                             <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy seguro de que lo harás.</td>
                         </tr>
                     </table>
-
                 </details>
                 
-                <details>
-                    <summary>Recuerdos familiares</summary>
+                <details> <!-- Doctor -->
+                    <summary class="pirn">Eventos de Doctor</summary>
 
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                    <details>
+                        <summary>El diagnóstico erróneo del médico</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra a la clínica.</li>
+                                        <li class="gustos">13:30 a 16:00.</li>
+                                        <li class="gustos">Debe ser Martes.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">El doctor tiene 6 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camina desde el bosque hacia la colina de la Madre.</li>
-                                    <li class="gustos">8:00 am a 10:00 am.</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">El doctor tiene 4 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                    </details>  
+
+                    <details>
+                        <summary>Recuerdos familiares</summary>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camina desde el bosque hacia la colina de la Madre.</li>
+                                        <li class="gustos">8:00 am a 10:00 am.</li>
+                                        <li class="gustos">Debe ser Miercoles.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">El doctor tiene 4 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+                </details>
+                     
+                <details> <!-- Duke -->
+                    <summary class="pirn">Eventos de Duke</summary>
+
+                    <details>
+                        <summary>Batalla de bebida</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la posada.</li>
+                                        <li class="gustos">19:30 a 22:00.</li>
+                                        <li class="gustos">Debe ser Domingo.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Karen tiene 8 notas de amistad o más.</li>
+                                        <li class="gustos">No estás casado con Karen.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 2:</b> Claro.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>Dudley y Duke discuten</summary>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la posada.</li>
+                                        <li class="gustos">14:00 a 16:00.</li>
+                                        <li class="gustos">Debe ser Sabado.</li>
+                                        <li class="gustos">Debe ser lluvioso o nevado.</li>
+                                        <li class="gustos">Ran tiene 4 notas de amistad o más.</li>
+                                        <li class="gustos">No estás casado con Ran.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 1:</b> Intervenir.</td>
+                            </tr>
+                        </table>
+    
+                    </details>
                 </details>
                 
-                <details>
-
-                    <summary>Regalo del padre</summary>
-
+                <details> <!-- Dudley -->
+                    <summary class="pirn">Eventos de Dudley</summary>
+                
+                    <h3>Regalo del padre</h3>
+    
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
@@ -339,16 +446,15 @@
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
                     </table>
-
                 </details>
                 
-                <details>
-
-                    <summary>La carta del abuelo</summary>
-
+                <details> <!-- Ellen -->
+                    <summary class="pirn">Eventos de Ellen</summary>
+                
+                    <h3>La carta del abuelo</h3>
+    
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
                         <tr>
                             <td>
                                 <ul class="horario">
@@ -363,15 +469,14 @@
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
                     </table>
-
                 </details>
-
-                <details>
-                    <summary>La amistad de Gray y Kai</summary>
-
+                
+                <details> <!-- Gray -->
+                    <summary class="pirn">Eventos de Gray</summary>
+                
+                    <h3>La amistad de Gray y Kai</h3>
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
                         <tr>
                             <td>
                                 <ul class="horario">
@@ -390,35 +495,13 @@
                         </tr>
                     </table>
                 </details>
-
-                <details>
-                    <summary>Fiesta del té de los duende de la cosecha</summary>
-
+                
+                <details> <!-- Huang -->
+                    <summary class="pirn">Eventos de Huang</summary>
+                
+                    <h3>Servicio de Huang</h3>
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la cabaña de los duendes de la cosecha.</li>
-                                    <li class="gustos">10:00 am a 5:00 pm.</li>
-                                    <li class="gustos">Cualquier día de la semana.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser Primavera.</li>
-                                    <li class="gustos">Todos los duendes tienen 2 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details>
-                    <summary>Servicio de Huang</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
                         <tr>
                             <td>
                                 <ul class="horario">
@@ -432,60 +515,80 @@
                             </td>
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
-                    </table>                    
-                </details>    
-
-                <details>
-                    <summary>La determinación de Jeff</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra a la tienda general.</li>
-                                    <li class="gustos">13:00 a 16:00.</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Debe ser lluvioso.</li>
-                                    <li class="gustos">Jeff tiene 10 notas de amistad.</li>
-                                    <li class="gustos">Sasha tiene 10 notas de amistad.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                    </table>  
                 </details>
-
-                <details>
-                    <summary>Venta de arte de Jeff</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                
+                <details> <!-- Jeff -->
+                    <summary class="pirn">Eventos de Jeff</summary>
+                
+                    <details>
+                        <summary>La determinación de Jeff</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra a la tienda general.</li>
+                                        <li class="gustos">13:00 a 16:00.</li>
+                                        <li class="gustos">Debe ser Miercoles.</li>
+                                        <li class="gustos">Debe ser lluvioso.</li>
+                                        <li class="gustos">Jeff tiene 10 notas de amistad.</li>
+                                        <li class="gustos">Sasha tiene 10 notas de amistad.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la tienda de comestibles de Jeff.</li>
-                                    <li class="gustos">8:00 am a 10:00 am.</li>
-                                    <li class="gustos">Debe ser Lunes.</li>
-                                    <li class="gustos">Cualquier Temporada.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Jeff tiene 8 notas de amistad o más.</li>
-                                    <li class="gustos">Sasha tiene 8 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                    <details>
+                        <summary>Venta de arte de Jeff</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la tienda de comestibles de Jeff.</li>
+                                        <li class="gustos">8:00 am a 10:00 am.</li>
+                                        <li class="gustos">Debe ser Lunes.</li>
+                                        <li class="gustos">Cualquier Temporada.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Jeff tiene 8 notas de amistad o más.</li>
+                                        <li class="gustos">Sasha tiene 8 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+
+                    <details>
+                        <summary>recuerdos de jeff</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la tienda de aves de corral.</li>
+                                        <li class="gustos">11:00 am a 1:00 pm</li>
+                                        <li class="gustos">Debe ser Martes.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Sasha tiene 7 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
-
-                <details>
-                    <summary>El presente de Jennifer</summary>
-
+                
+                <details> <!-- Jennifer -->
+                    <summary class="pirn">Eventos de Jennifer</summary>
+                
+                    <h3>El presente de Jennifer</h3>
+    
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
                         <tr>
                             <td>
                                 <ul class="horario">
@@ -497,102 +600,63 @@
                             </td>
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
-                    </table>                    
-                </details>
-
-                <details>
-                    <summary>Kai y Rick discuten</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine desde la plaza Rosa hasta la playa.</li>
-                                    <li class="gustos">13:00 a 17:00</li>
-                                    <li class="gustos">No debe ser Domingo.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">No estás casado con Popuri.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>                    
-                </details>
-
-                <details>
-                    <summary>El ocupado negocio de Kai</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra al Café de la playa.</li>
-                                    <li class="gustos">17:00 a 19:00</li>
-                                    <li class="gustos">Cualquier dia de la semana.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Debe ser Verano.</li>
-                                    <li class="gustos">Kai tiene 4 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>                    
+                    </table>  
                 </details>
                 
-                <details>
-                    <summary>Las habilidades de compra de Manna</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                <details> <!-- Rick -->
+                    <summary class="pirn">Eventos de Rick</summary>
+                    <details>
+                        <summary>Kai y Rick discuten</summary>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la tienda general de Jeff.</li>
-                                    <li class="gustos">13:50 a 16:00</li>
-                                    <li class="gustos">Debe ser Jueves o viernes.</li>
-                                    <li class="gustos">Debe ser lluvioso o nevado.</li>
-                                    <li class="gustos">Manna tiene 4 notas de amistad o más.</li>
-                                    <li class="gustos">Ya has visto el evento <a class="hiper" href="#trabajo-bodega">Cosecha de Bodega de Otoño</a> y a Cliff NO le ofrecieron el trabajo.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>                    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Camine desde la plaza Rosa hasta la playa.</li>
+                                        <li class="gustos">13:00 a 17:00</li>
+                                        <li class="gustos">No debe ser Domingo.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">Debe ser Verano.</li>
+                                        <li class="gustos">No estás casado con Popuri.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>                    
+                    </details>
                 </details>
                 
-                <details>
-                    <summary>recuerdos de jeff</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la tienda de aves de corral.</li>
-                                    <li class="gustos">11:00 am a 1:00 pm</li>
-                                    <li class="gustos">Debe ser Martes.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Sasha tiene 7 notas de amistad o más.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                <details> <!-- Kai -->
+                    <summary class="pirn">Eventos de Kai</summary>
+                    <details>
+                        <summary>El ocupado negocio de Kai</summary>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra al Café de la playa.</li>
+                                        <li class="gustos">17:00 a 19:00</li>
+                                        <li class="gustos">Cualquier dia de la semana.</li>
+                                        <li class="gustos">Debe ser soleado.</li>
+                                        <li class="gustos">Debe ser Verano.</li>
+                                        <li class="gustos">Kai tiene 4 notas de amistad o más.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>                    
+                    </details>
                 </details>
 
-                <details>
-                    <summary>Patrulla de montaña</summary>
-
+                <details> <!-- Harris -->
+                    <summary class="pirn">Harris</summary>
+                    <h3>Patrulla de montaña</h3>
+    
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
                         <tr>
                             <td>
                                 <ul class="horario">
@@ -608,12 +672,11 @@
                     </table>
                 </details>
 
-                <details>
-                    <summary>Pedido por correo de Popuri</summary>
-
+                <details> <!-- Popuri -->
+                    <summary class="pirn">Eventos de Popuri</summary>
+                    <h3>Pedido por correo de Popuri</h3>
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
                         <tr>
                             <td>
                                 <ul class="horario">
@@ -630,90 +693,51 @@
                     </table>
                 </details>
 
-                <details>
-                    <summary>Corte de energía</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+                <details> <!-- Yu -->
+                    <summary class="pirn">Eventos de Yu</summary>
+                    <details>
+                        <summary>La fiebre de Yu</summary>
     
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Dentro de tu casa de campo.</li>
-                                    <li class="gustos">6:00 am</li>
-                                    <li class="gustos">Debe ser verano o invierno</li>
-                                    <li class="gustos">Clima tormentoso.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Ellen.</li>
+                                        <li class="gustos">9:00 am a 1:00 pm</li>
+                                        <li class="gustos">Debe ser Miercoles.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">No estás casado con Elly.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px">No hay opciones.</td>
+                            </tr>
+                        </table>
+                    </details>
+    
+                    <details>
+                        <summary>El tiempo de juego de Yuu</summary>
+    
+                        <table class="data">
+                            <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
+        
+                            <tr>
+                                <td>
+                                    <ul class="horario">
+                                        <li class="gustos">Entra en la casa de Ellen.</li>
+                                        <li class="gustos">10:00 am a 5:00 pm</li>
+                                        <li class="gustos">Debe ser Miercoles.</li>
+                                        <li class="gustos">Cualquier clima.</li>
+                                        <li class="gustos">No estás casado con Elly.</li>
+                                    </ul>
+                                </td>
+                                <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
+                            </tr>
+                        </table>
+                    </details>
                 </details>
 
-                <details>
-                    <summary>Consulta de vida de Sasha</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Camine hasta la plaza Rosa.</li>
-                                    <li class="gustos">13:00 a 16:00</li>
-                                    <li class="gustos">No debe ser Lunes ni Martes.</li>
-                                    <li class="gustos">Debe ser soleado.</li>
-                                    <li class="gustos">Sasha tiene 4 notas de amistad o más.</li>
-                                    <li class="gustos">El evento <a class="hiper" href="#trabajo-bodega">Cosecha de Bodega de Otoño</a> NO ha ocurrido todavía, o si ocurrio a Cliff NO se le ofreció el trabajo.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details>
-                    <summary>La fiebre de Yu</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Ellen.</li>
-                                    <li class="gustos">9:00 am a 1:00 pm</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">No estás casado con Elly.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px">No hay opciones.</td>
-                        </tr>
-                    </table>
-                </details>
-
-                <details>
-                    <summary>El tiempo de juego de Yuu</summary>
-
-                    <table class="data">
-                        <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
-    
-                        <tr>
-                            <td>
-                                <ul class="horario">
-                                    <li class="gustos">Entra en la casa de Ellen.</li>
-                                    <li class="gustos">10:00 am a 5:00 pm</li>
-                                    <li class="gustos">Debe ser Miercoles.</li>
-                                    <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">No estás casado con Elly.</li>
-                                </ul>
-                            </td>
-                            <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
-                        </tr>
-                    </table>
-                </details>
-                
                 <h2>Eventos disponibles solo en el año 1</h2>
 
                 <details>
@@ -737,13 +761,13 @@
                 </details>
 
                 <details>
-                    <summary id="trabajo-bodega" ez-toc-data-id="#trabajo-bodega">Cosecha de Bodega de Otoño</summary>
+                    <summary>Cosecha de Bodega de Otoño</summary>
 
-                    <p>Este evento te preguntaran si conoces a alguien para que ayude con el trabajo en la bodega y tienes dos opciones:</p>
+                    <p>En este evento ocurre en otoño y te preguntaran si conoces a alguien para que ayude con el trabajo en la bodega y tienes dos opciones:</p>
 
                     <ul class="horario">
-                        <li class="gustos">Decirle a Cliff, si le dices el se quedara en la ciudad trabajando en la bodega permanentemente.</li>
-                        <li class="gustos">No decirle a Cliff, si no le dices Cliff se ira de la ciudad al final del año pero podras hacer que el regrese si activas el evento de <a class="hiper" href="#retor-cliff">Cliff regresa</a></li>
+                        <li class="gustos"><b>Decirle a Cliff:</b> si le dices el se quedara en la ciudad trabajando en la bodega permanentemente.</li>
+                        <li class="gustos"><b>No decirle a Cliff:</b> si no le dices Cliff se ira de la ciudad al final del año pero podras hacer que el regrese si activas el evento de <b>El regreso de Cliff</b>.</li>
                     </ul>
 
                     <table class="data">
@@ -762,6 +786,7 @@
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
                     </table>
+                    <p><b>El regreso de Cliff: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
                 </details>
 
                 <details>
@@ -793,6 +818,8 @@
                 <details>
                     <summary>La despedida de Cliff</summary>
 
+                    <p>Este evento solo ocurre y lo podras ver cuando no le contastes a Cliff sobre el trqabajo de la bodega en el evento <b>Cosecha de Bodega de Otoño</b>, aun si no ves este ecento Cliff ya no estara.</p>
+
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
     
@@ -803,18 +830,19 @@
                                     <li class="gustos">6:00 am a 12:00 pm</li>
                                     <li class="gustos">Debe ser el 29 de Invierno.</li>
                                     <li class="gustos">Cualquier clima.</li>
-                                    <li class="gustos">A Cliff NO se le asignó el trabajo en la bodega durante el evento <a class="hiper" href="#trabajo-bodega">Cosecha de Bodega de Otoño</a>.</li>
+                                    <li class="gustos">A Cliff NO se le asignó el trabajo en la bodega durante el evento <b>Cosecha de Bodega de Otoño</b>.</li>
                                 </ul>
                             </td>
                             <td style=" padding: 0 10px"><b>Opción 1:</b> Estoy de acuerdo.</td>
                         </tr>
                     </table>
+                    <p>El evento <b>Cosecha de Bodega de Otoño </b>lo puedes consultar en esta seccion.</p>  
                 </details>
 
                 <h2>Eventos disponibles solo en el año 2</h2>
 
                 <details>
-                    <summary id="retor-cliff" ez-toc-data-id="#retor-cliff">Cliff regresa</summary>
+                    <summary id="retor-cliff" ez-toc-data-id="#retor-cliff">El regreso de Cliff</summary>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -827,16 +855,17 @@
                                     <li class="gustos">Cualquier día de la semana.</li>
                                     <li class="gustos">Debe ser segundo año o posterior.</li>
                                     <li class="gustos">Puede ser Primavera 29, Verano 29, Otoño 29 o Invierno 29.</li>
-                                    <li class="gustos">A Cliff NO se le asignó el trabajo durante el evento <a class="hiper" href="#trabajo-bodega">Cosecha de Bodega de Otoño</a>.</li>
+                                    <li class="gustos">A Cliff NO se le asignó el trabajo durante el evento <b>Cosecha de Bodega de Otoño</b>.</li>
                                 </ul>
                             </td>
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
                     </table>
+                    <p><b>Cosecha de Bodega de Otoño: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 1</b>.</p>  
                 </details>
 
                 <details>
-                    <summary>El visitante de Elena</summary>
+                    <summary>El visitante de Ellen</summary>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -859,7 +888,7 @@
                 </details>
 
                 <details>
-                    <summary>Joanna egoísta</summary>
+                    <summary>Joanna es egoísta</summary>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -907,7 +936,7 @@
                 </details>
 
                 <details>
-                    <summary>La caída de Gotts</summary>
+                    <summary>El decaimiento de Gotts</summary>
 
                     <table class="data">
                         <tr><th>Requisitos</th><th>Mejor respuesta</th></tr>
@@ -928,7 +957,7 @@
                         </tr>
                     </table>
 
-                    <p>Si quieres que Gotts se recpere solo debes alcanzar al menos 6 notas de amistad, regresa a la casa de Gotts entre la 1:00 p. m. y las 10:00 p. m. en un día soleado de otoño SOLAMENTE . Gotts te dirá que finalmente recuperó el ánimo y se disculpa por preocuparte. A continuación, podrá volver a encargar proyectos de carpintería en su tienda.</p>
+                    <p>Si quieres que Gotts se regrese a trabajar solo debes alcanzar al menos 6 notas de amistad, regresa a la casa de Gotts entre la 1:00 p. m. y las 10:00 p. m. en un día soleado de otoño SOLAMENTE. Gotts te dirá que finalmente recuperó el ánimo y se disculpa por preocuparte. A continuación, podrá volver a encargar proyectos de carpintería en su tienda.</p>
                 </details>
 
                 <details>
@@ -946,12 +975,13 @@
                                     <li class="gustos">Tiempo soleado.</li>
                                     <li class="gustos">Debe ser tercer año o posterior.</li>
                                     <li class="gustos">Mei tiene 4 notas de amistad o más</li>
-                                    <li class="gustos">Has visto el evento <b>Joanna egoísta</b>.</li>
+                                    <li class="gustos">Has visto el evento <b>Joanna es egoísta</b>.</li>
                                 </ul>
                             </td>
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
                     </table>
+                    <p><b>Joanna es egoísta: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
                 </details>
 
                 <h2>Eventos disponibles solo en el año 4</h2>
@@ -972,12 +1002,13 @@
                                     <li class="gustos">Debe ser cuarto año o posterior.</li>
                                     <li class="gustos">Ellen tiene 4 notas de amistad o más</li>
                                     <li class="gustos">Saibara tiene 4 notas de amistad o más</li>
-                                    <li class="gustos">Has visto el evento <b>El visitante de Elena</b>.</li>
+                                    <li class="gustos">Has visto el evento <b>El visitante de Ellen</b>.</li>
                                 </ul>
                             </td>
                             <td style=" padding: 0 10px">No hay opciones.</td>
                         </tr>
                     </table>
+                    <p><b>El visitante de Ellen: </b>lo puedes consultar en la seccion de <b class="sub_titulo">Eventos disponibles solo en el año 2</b>.</p>  
                 </details>
 
                 <details>
@@ -1206,5 +1237,6 @@
                 </section>
             </footer>
         </div>
+        <script type="text/javascript" src="../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </body>
 </html>

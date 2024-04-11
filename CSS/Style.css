@@ -99,10 +99,17 @@ p { text-align: justify; }
 /* clase "hiper" con propiedad de enlace y le modifico la apariencia de hipervinculo*/
 .hiper:-webkit-any-link {
     font-size: 1.2em;
+    cursor: pointer;
     font-weight: bold;
     font-family: 'Fantasy', sans-serif;
     text-decoration: none;
     color: #0000EE;
+}
+
+.sub_titulo {
+    color: #09F;
+    font-weight: bold;
+    text-decoration: none;
 }
   
 /* esta ID evita que el borde golpee debajo de objetos flotantes */
@@ -190,6 +197,8 @@ h3 , summary {
 	line-height: 1em;
     margin: 24px 0;
 }
+
+.pirn{ color: rgb(217, 0, 255); }
 
 summary { cursor: pointer; }
 
