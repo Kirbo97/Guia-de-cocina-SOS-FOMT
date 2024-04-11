@@ -137,10 +137,21 @@ h1 {
     letter-spacing: 0.1em;
     line-height:1em;
     margin: 0%;
+} 
+/* controlar los pasos intermedios en una secuencia de animación */
+@keyframes anim{
+    0% {color: #ff0;} /*Amarillo*/
+   25% {color: #f80;} /*Naranja*/
+   50% {color: #000;} /*Negro*/
+   75% {color: #f80;} /*Otra vez naranja*/
+  100% {color: #ff0;} /*Otra vez amarillo*/
 }
 
 /* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
 h1:before {
+    animation-name: anim; /* llamo a la animacion */
+    animation-duration: 5s; /* le doy un intervalo de animacion*/
+    animation-iteration-count: infinite; /* le indico que se repita cuando finalise la animacion */
     content: '\00273F'; /*(La guion sera una flor)*/
     color: #E83; /*el guion sera de color naranja*/
     margin: 0 8px 0 0;
@@ -398,7 +409,6 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 }
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
-
 .cumpleaño:before  {
     content: '\1F381'; /*(La guion sera un regalo)*/
     font-size: 3em;
@@ -409,8 +419,34 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     font-size: 3em;
 }
 
+/* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de corazon con color */
 .cna:before  {
-    content: '\1F9E1'; /*(La guion sera un calendario)*/
+    content: '\1F9E1'; /*(La guion sera un corazon naranja)*/
+    font-size: 3em;
+}
+
+.cam:before  {
+    content: '\1F49B'; /*(La guion sera un corazon amarillo)*/
+    font-size: 3em;
+}
+
+.caz:before  {
+    content: '\1F499'; /*(La guion sera un corazon azul)*/
+    font-size: 3em;
+}
+
+.cmo:before  {
+    content: '\1F49C'; /*(La guion sera un corazon morado)*/
+    font-size: 3em;
+}
+
+.cne:before  {
+    content: '\1F5A4'; /*(La guion sera un corazon negro)*/
+    font-size: 3em;
+}
+
+.cbla:before  {
+    content: '\1F90D'; /*(La guion sera un corazon blanco)*/
     font-size: 3em;
 }
 
