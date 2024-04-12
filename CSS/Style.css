@@ -197,8 +197,17 @@ details[open] > summary:first-of-type {
 .right {
     float:right; 
     height:auto; 
+    margin: 5px 20px 0 0;
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* se crea la clase "left" para que se ocupe de posisionar la imagen a la izquierda*/
+.left {
+    float:left; 
+    height:auto; 
     margin: 5px 0 0 20px;
-    max-width:100%; /* stop floats from expanding outside of content */	
+    max-width:100%;
     border-radius:10px;
 }
 
@@ -348,7 +357,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 .box_mascota img { max-width:100%; height:auto; }
 
-/* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
+/* se crea la clase "box_aldeano" para que se ocupe de posisionar el contenido para las mascotas*/
 .box_aldeanos {
     max-width:200px; 
     height:auto; 
@@ -357,6 +366,16 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 }
 
 .box_aldeanos img { max-width:100%; height:auto; }
+
+/* se crea la clase "box_otro" para que se ocupe de posisionar el contenido para las mascotas*/
+.box_otro {
+    max-width:600px; 
+    height:auto; 
+    display:inline-block; 
+    margin:10px 17px;
+}
+
+.box_otro img { max-width:100%; height:auto; }
 
 /* se crea la clase "box_ganado" para que se ocupe de posisionar el contenido para el ganado*/
 .box_ganado {
