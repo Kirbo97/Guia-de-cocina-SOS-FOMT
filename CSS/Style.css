@@ -140,17 +140,19 @@ h1 {
 } 
 /* controlar los pasos intermedios en una secuencia de animación */
 @keyframes anim{
-    0% {color: #ff0;} /*Amarillo*/
-   25% {color: #f80;} /*Naranja*/
-   50% {color: #000;} /*Negro*/
-   75% {color: #f80;} /*Otra vez naranja*/
-  100% {color: #ff0;} /*Otra vez amarillo*/
+  0% {color: #E83;} 
+  16.67% {color: #87b34d;} 
+  33.34% {color: rgb(138, 251, 32);} 
+  50.01% {color: rgb(72, 184, 20);}
+  33.34% {color: rgb(138, 251, 32);} 
+  16.67% {color: #87b34d;} 
+  100% {color: #E83;} 
 }
 
 /* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
 h1:before {
     animation-name: anim; /* llamo a la animacion */
-    animation-duration: 5s; /* le doy un intervalo de animacion*/
+    animation-duration: 4s; /* le doy un intervalo de animacion*/
     animation-iteration-count: infinite; /* le indico que se repita cuando finalise la animacion */
     content: '\00273F'; /*(La guion sera una flor)*/
     color: #E83; /*el guion sera de color naranja*/
@@ -266,12 +268,16 @@ li {
 }
 
 /* La etiqueta "data" tendra una caracteristica para desplasar las tablas al centro */
-.data{ margin:15px auto;}
+.data{
+    margin:15px auto;
+    border-spacing: 0px;
+    border:2px solid green;
+}
 
 /* Las etiquetas "td" (columna simple de la tabla) y "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño de las lineas de la tabla */
 td, th { 
     padding: 4px 5px; /*(arriba, derecha, abajo y izquierda)*/
-    border:2px solid #00aa25;
+    border:2px solid green;
 }
 
 td.perso{ padding: 8px 4px 8px 18px; }
@@ -279,10 +285,6 @@ td.perso{ padding: 8px 4px 8px 18px; }
 /* La etiqueta "th" (columna de la tabla como encabesado) tendran caracteristicas para el diseño del encabesado de la tabla */
 th { 
     background-color:#00AA88; 
-    border-top:3px solid #228877; 
-    border-bottom:3px solid #228877;
-    border-left:3px solid #228877;
-    border-right:3px solid #228877; 
     color: #FAFAFA
 }
 
@@ -368,24 +370,25 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
 .fasina:before  {
-    content: '\1F60D'; /*(La guion sera una flor)*/
+    content: '\1F60D'; /*(La guion sera una cara con corazon)*/
     font-size: 2.8em;
 }
 
 .encanta:before  {
-    content: '\1F604'; /*(La guion sera una flor)*/
+    content: '\1F604'; /*(La guion sera una alegre)*/
     font-size: 2.8em;
 }
 
 .gusta:before  {
-    content: '\1F642'; /*(La guion sera una flor)*/
+    content: '\1F642'; /*(La guion sera una feliz)*/
     font-size: 3em;
 }
 
 .desagrado:before  {
-    content: '\1F620'; /*(La guion sera una flor)*/
+    content: '\1F620'; /*(La guion sera una desagrado)*/
     font-size: 3em;
 }
+
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de estaciones */
 .primavera:before  {
@@ -410,7 +413,7 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de eventos */
 .cumpleaño:before  {
-    content: '\1F381'; /*(La guion sera un regalo)*/
+    content: '\1F382'; /*(La guion sera un regalo)*/
     font-size: 3em;
 }
 
