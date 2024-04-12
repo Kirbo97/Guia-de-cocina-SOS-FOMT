@@ -141,18 +141,18 @@ h1 {
 /* controlar los pasos intermedios en una secuencia de animación */
 @keyframes anim{
   0% {color: #E83;} 
-  16.67% {color: #87b34d;} 
-  33.34% {color: rgb(138, 251, 32);} 
-  50.01% {color: rgb(72, 184, 20);}
-  33.34% {color: rgb(138, 251, 32);} 
-  16.67% {color: #87b34d;} 
+  16.66666667% {color: #87b34d;} 
+  33.33333334% {color: rgb(138, 251, 32);} 
+  50.00000001% {color: rgb(72, 184, 20);}
+  66.66666668% {color: rgb(138, 251, 32);} 
+  83.33333335% {color: #87b34d;} 
   100% {color: #E83;} 
 }
 
 /* La etiqueta h1 con propiedad "before" (Antes) tendra un especie de gion */
 h1:before {
     animation-name: anim; /* llamo a la animacion */
-    animation-duration: 4s; /* le doy un intervalo de animacion*/
+    animation-duration: 8s; /* le doy un intervalo de animacion*/
     animation-iteration-count: infinite; /* le indico que se repita cuando finalise la animacion */
     content: '\00273F'; /*(La guion sera una flor)*/
     color: #E83; /*el guion sera de color naranja*/
