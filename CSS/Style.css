@@ -78,7 +78,7 @@ header .icono {
     height: 38px; /* ajusto el alto que tendra esta clase */
 }
 
-#a2{ cursor: pointer; }
+#a2{ cursor: pointer; } /* cuando el maus se aserca cambia su aspecto */
 
 /* se crea caracteristicas para la etiqueta "b" para que sirva como negrilla*/
 b {
