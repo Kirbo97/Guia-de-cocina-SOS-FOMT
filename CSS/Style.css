@@ -59,7 +59,7 @@ html {
 
 /* La etiqueta "body" tendra cierta carasteristica */
 body {
-    background: url('../IMG/site_background.jpg') repeat; 
+    background: url('../IMG/fondo.jpg') repeat; 
     background-attachment: fixed;
 }
 
