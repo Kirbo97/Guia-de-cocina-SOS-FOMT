@@ -24,13 +24,19 @@
         margin: 0 !important;
     }
     
-    header .pos-fin {
-        margin: 0 0 0 2.66em !important;
-    }
+    header .pos-fin { margin: 0 0 0 2.66em !important; }
 
-    .vin_tel{
-        font-size: 0.97em !important;
-    }
+    .vin_tel{ font-size: 0.97em !important; }
+
+    .men_tel{ font-size: 0.80em !important; }
+
+    .esp1 { width: 180.8px !important;}
+
+    .esp2 { width: 200.8px !important;}
+
+    .esp3 { width: 235.8px !important;}
+
+    .esp4 { width: 178.8px !important;}
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -53,14 +59,48 @@
         margin: 0 !important;
     }
     
-    header .pos-fin {
-        margin: 0 0 0 2.66em !important;
-    }
+    header .pos-fin { margin: 0 0 0 2.66em !important; }
 
-    .vin_tel{
-        font-size: 0.97em !important;
-    }
+    .vin_tel{ font-size: 0.97em !important; }
+
+    .men_tel{ font-size: 0.80em !important; }
+
+    .esp1 { width: 180.8px !important;}
+
+    .esp2 { width: 200.8px !important;}
+
+    .esp3 { width: 235.8px !important;}
+
+    .esp4 { width: 178.8px !important;}
 }
+
+/* ******************* */
+/*  Diseños del menu  */
+/* ******************* */
+
+nav{
+    background: #00AA88;
+    padding: 10px 8px 0 8px;
+    display: flex;
+    border-bottom: 3px solid #edf0f0;
+    box-shadow: 0px 0px 0px 6px #00AA88; 
+}
+
+summary.menu{ 
+    font-size: 1.2em; 
+    margin: 12px 0 15px 0;
+}
+  
+nav ul li:hover { background: #eca023; }
+
+.esp1,.esp2,.esp3,.esp4 { 
+    height: auto;
+    width: 320.8px;
+} 
+
+.men_tel{ 
+   color: white;
+} 
 
 /* ******************* */
 /*  Diseños generales  */
@@ -77,6 +117,7 @@ html {
 body {
     background: url('../IMG/fondo.jpg') repeat; 
     background-attachment: fixed;
+    margin: 0;
 }
 
 /* La etiqueta "header" tendra cierta carasteristica */
