@@ -93,10 +93,13 @@ summary.menu{
   
 nav ul li:hover { background: #eca023; }
 
-.esp1,.esp2,.esp3,.esp4 { 
-    height: auto;
-    width: 320.8px;
-} 
+.esp1{ 
+    padding-left: 20px; 
+    width: 320.8px; 
+}
+.esp2 { width: 320.8px; }
+.esp3 { width: 340.8px; } 
+.esp4 { width: 260.8px; }
 
 .men_tel{ 
    color: white;
