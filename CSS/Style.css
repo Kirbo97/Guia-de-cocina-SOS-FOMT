@@ -28,7 +28,7 @@
 
     .vin_tel{ font-size: 0.97em !important; }
 
-    .men_tel{ font-size: 0.78em !important; }
+    .men_tel{ font-size: 0.76em !important; }
 
     .esp1 { width: 180.8px !important;}
 
@@ -63,7 +63,7 @@
 
     .vin_tel{ font-size: 0.97em !important; }
 
-    .men_tel{ font-size: 0.78em !important; }
+    .men_tel{ font-size: 0.76em !important; }
 
     .esp1 { width: 180.8px !important;}
 
@@ -97,6 +97,7 @@ nav ul li:hover { background: #eca023; }
     padding-left: 20px; 
     width: 320.8px; 
 }
+
 .esp2 { width: 320.8px; }
 .esp3 { width: 340.8px; } 
 .esp4 { width: 260.8px; }
