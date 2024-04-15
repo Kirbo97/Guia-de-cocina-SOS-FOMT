@@ -25,18 +25,18 @@
     }
     
     header .pos-fin {
-        margin: 0 0 0 2em !important;
+        margin: 0 0 0 2.77em !important;
     }
 
     .vin_tel{
-        font-size: 0.96em !important;
+        font-size: 1em !important;
     }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:600px) and (orientation:landscape){    
     h1 { font-size: 2.18em !important; }
-    header{ height: 3.18em !important; }
+    header{ height: 76px !important;  }
 
     li.gustos { 
         margin: 4px 0 4px 0 !important;
@@ -51,6 +51,14 @@
     ul.sep3 { 
         padding: 0 4px 0 40px !important;
         margin: 0 !important;
+    }
+    
+    header .pos-fin {
+        margin: 0 0 0 2.77em !important;
+    }
+
+    .vin_tel{
+        font-size: 1em !important;
     }
 }
 
