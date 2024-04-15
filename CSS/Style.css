@@ -7,7 +7,7 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:980px){
     h1 { font-size: 2.18em !important; }
-    header{ height: 3.18em !important; }
+    header{ height: 76px !important; }
 
     li.gustos { 
         margin: 4px 0 4px 0 !important;
@@ -22,6 +22,14 @@
     ul.sep3 { 
         padding: 0 4px 0 40px !important;
         margin: 0 !important;
+    }
+    
+    header .pos-fin {
+        margin: 0 0 0 2em !important;
+    }
+
+    .vin_tel{
+        font-size: 0.96em !important;
     }
 }
 
@@ -71,14 +79,26 @@ header{
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
+/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
+header .pos-ini {
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+}
+
+/* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
+header .pos-fin {
+    margin: 0 0 0 6.7em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+}
+
 /* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
 header .icono {
     position: absolute;
     width: 38px; /* ajusto el ancho que tendra esta clase */
     height: 38px; /* ajusto el alto que tendra esta clase */
+    cursor: pointer;
 }
-
-#a2{ cursor: pointer; } /* cuando el maus se aserca cambia su aspecto */
 
 /* se crea caracteristicas para la etiqueta "b" para que sirva como negrilla*/
 b {
@@ -338,10 +358,8 @@ tr:nth-child(even) {background-color: #FAFAFA;}
 
 /* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
 .box_inicio {
-    max-width:160px; 
     height:auto; 
     display:inline-block; 
-    margin:17px 17px;
 }
 
 /* La etiqueta "img" con la clase "box_inicio" para que se ocupe del tamaño de la imagen*/
