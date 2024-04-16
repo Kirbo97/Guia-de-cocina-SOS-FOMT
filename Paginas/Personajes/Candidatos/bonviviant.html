@@ -11,44 +11,54 @@
     <body>
 
         <nav>
-            <details class="esp1">
-                <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Cocina</b> </summary>
-                <ul class="sep1">
-                    <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Otros/Recetas.html">Libro de cocina</a></li>
-                </ul>
-              </details>
-              
-              <details class="esp2">
-                <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Mineria</b> </summary>
-                <ul class="sep1">
-                    <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Minas/Cascada.html">Mina de la cascada</a></li>
-                    <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Minas/Lago.html">Mina del lago</a></li>
-                </ul>
-              </details>
-        
-              <details class="esp3">
-                  <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Aldeanos</b> </summary>
-                  <ul class="sep1">
-                      <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Otros/Casamiento.html">Candidatos a matrimonio</a></li>
-                  </ul>
-                </details>
-                
-                <details class="esp4">
-                  <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Animales</b> </summary>
-                  <ul class="sep1">
-                      <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Establo.html">Establo</a></li>
-                      <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Gallinero.html">Gallinero</a></li>
-                      <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Ganado.html">Ganado</a></li>
-                      <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Mascota.html">mascotas</a></li>
-                  </ul>
-                </details>
-                
+            <div id="esp1" onclick="val1()">
+                <details>
+                    <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Cocina</b> </summary>
+                    <ul class="sep1">
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Otros/Recetas.html">Libro de cocina</a></li>
+                    </ul>
+                </details>                
+            </div>
+
+            <div id="esp2" onclick="val2()">
+                <details>
+                    <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Mineria</b> </summary>
+                    <ul class="sep1">
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Minas/Cascada.html">Mina de la cascada</a></li>
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Minas/Lago.html">Mina del lago</a></li>
+                    </ul>
+                </details>                
+            </div>
+
+            <div id="esp3" onclick="val3()">
+                <details>
+                    <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Aldeanos</b> </summary>
+                    <ul class="sep1">
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Otros/Casamiento.html">Candidatos a matrimonio</a></li>
+                    </ul>
+                </details>                
+            </div>
+
+            <div id="esp4" onclick="val4()">
+                <details>
+                    <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Animales</b> </summary>
+                    <ul class="sep1">
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Establo.html">Establo</a></li>
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Gallinero.html">Gallinero</a></li>
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Ganado.html">Ganado</a></li>
+                        <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Animales/Mascota.html">mascotas</a></li>
+                    </ul>
+                </details>                
+            </div>
+
+            <div id="esp5" onclick="val5()">
                 <details>
                     <summary class="menu"> <b class="hiper men_tel" style="margin: 0;">Eventos</b> </summary>
                     <ul class="sep1">
                         <li class="gustos" style="margin: 0; padding: 10px 0;"><a class="hiper men_tel" href="../../../Paginas/Otros/Even_Ale.html">Eventos aleatorios</a></li>
                     </ul>
-                  </details>
+                </details>
+            </div>
         </nav>
 
         <div id="content">
@@ -270,5 +280,6 @@
                 </section>
             </footer>
         </div>
+        <script type="text/javascript" src="../../../JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </body>
 </html>

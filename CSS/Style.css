@@ -30,13 +30,13 @@
 
     .men_tel{ font-size: 0.76em !important; }
 
-    .esp1 { width: 180.8px !important;}
+    #esp1 { width: 180.8px !important;}
 
-    .esp2 { width: 200.8px !important;}
+    #esp2 { width: 200.8px !important;}
 
-    .esp3 { width: 235.8px !important;}
+    #esp3 { width: 235.8px !important;}
 
-    .esp4 { width: 160.8px !important;}
+    #esp4 { width: 160.8px !important;}
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -65,13 +65,13 @@
 
     .men_tel{ font-size: 0.76em !important; }
 
-    .esp1 { width: 180.8px !important;}
+    #esp1 { width: 180.8px !important;}
 
-    .esp2 { width: 200.8px !important;}
+    #esp2 { width: 200.8px !important;}
 
-    .esp3 { width: 235.8px !important;}
+    #esp3 { width: 235.8px !important;}
 
-    .esp4 { width: 160.8px !important;}
+    #esp4 { width: 160.8px !important;}
 }
 
 /* ******************* */
@@ -93,14 +93,14 @@ summary.menu{
   
 nav ul li:hover { background: #eca023; }
 
-.esp1{ 
+#esp1{ 
     padding-left: 20px; 
     width: 320.8px; 
 }
 
-.esp2 { width: 320.8px; }
-.esp3 { width: 340.8px; } 
-.esp4 { width: 260.8px; }
+#esp2 { width: 320.8px; }
+#esp3 { width: 340.8px; } 
+#esp4 { width: 260.8px; }
 
 .men_tel{ 
    color: white;
@@ -140,7 +140,7 @@ header .pos-ini {
 
 /* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
 header .pos-fin {
-    margin: 0 0 0 6.7em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 0 0 6.82em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
 }
