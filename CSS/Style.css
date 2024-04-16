@@ -333,7 +333,7 @@ ul.horario {
     margin: 0;
 }
 
-/* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion */
+/* La etiqueta li con propiedad "before" (Antes) tendra un especie de gion pero solo los que estan dentro de la etiqueta ul*/
 ul li:before {
     content: '\1F340'; /* La guion sera un trevol */
     color: #093; /* El guion sera de color verde*/
