@@ -4,4 +4,4 @@ La informacion y parte de los diseños de la pagina pertenesen a Ushi No Tane, p
 
 Para un mejor entendimiento puede consultarlo con la imagen.
 
-![vista](./IMG/img.png)
+![vista](./IMG/vista.png)
