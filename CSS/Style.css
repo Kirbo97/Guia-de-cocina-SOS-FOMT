@@ -584,18 +584,3 @@ section .logo {
 section .enlace {
     width: 40px; /* ajusto el tamaño que tendra esta clase */
 }
-
-/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
-.posision-pri {
-    margin: 0 0 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
-
-/* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
-.posision-sec {
-    margin: 0 0 0 4.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
-
-/* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
-.posision-ter {
-    margin: 0 auto 0 4.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
