@@ -1,50 +1,21 @@
-let nav1 = document.getElementById('esp1').querySelector('details');  //el boton copiar se avilita
-let nav2 = document.getElementById('esp2').querySelector('details');  //el boton copiar se avilita
-let nav3 = document.getElementById('esp3').querySelector('details');  //el boton copiar se avilita
-let nav4 = document.getElementById('esp4').querySelector('details'); //el boton copiar se avilita
-let nav5 = document.getElementById('esp5').querySelector('details');  //el boton copiar se avilita
 
-function val1(){
-    if(nav1.open==false){
-        nav2.open=false;
-        nav3.open=false;
-        nav4.open=false;
-        nav5.open=false;
+function Scrollbutton(tip_bot) {
+    var anchoVentana = window.innerWidth;
+    var salto_movile=525;
+    var salto_comp=540;
+        
+    if (anchoVentana <= 980) { // desplasamiento para cuando es  el movile
+        if (tip_bot === 'arriba') {
+            document.getElementById("boxsort").scrollTop -= salto_movile;
+        } else if (tip_bot === 'abajo') {
+            document.getElementById("boxsort").scrollTop += salto_movile;
+        }
+            
+    } else if (anchoVentana > 980) { // desplasamiento para cuando es la computadora
+        if (tip_bot === 'arriba') {
+            document.getElementById("boxsort").scrollTop -= salto_comp;
+        } else if (tip_bot === 'abajo') {
+            document.getElementById("boxsort").scrollTop += salto_comp;
+        }   
     }
-}
-
-function val2(){
-    if(nav2.open==false){
-        nav1.open=false;
-        nav3.open=false;
-        nav4.open=false;
-        nav5.open=false;
-    }
-}
-
-function val3(){
-    if(nav3.open==false){
-        nav1.open=false;
-        nav2.open=false;
-        nav4.open=false;
-        nav5.open=false;
-    }
-}
-
-function val4(){
-    if(nav4.open==false){
-        nav1.open=false;
-        nav2.open=false;
-        nav3.open=false;
-        nav5.open=false;
-    }
-}
-
-function val5(){
-    if(nav5.open==false){
-        nav1.open=false;
-        nav2.open=false;
-        nav3.open=false;
-        nav4.open=false;
-    }
-}
+}   

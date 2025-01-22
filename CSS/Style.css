@@ -1,97 +1,10 @@
-/* ********************************* */
-/*  Diseños para Moviles (426 x 790) */
-/* ********************************* */
-
-/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
-
-/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:980px){
-    h1 { font-size: 2.18em !important; }
-    header{ height: 76px !important; }
-
-    li.gustos { 
-        margin: 4px 0 4px 0 !important;
-        text-align: left !important;
-    }
-    
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    header .pos-fin { margin: 0 0 0 2.75em !important; }
-
-    .vin_tel{ font-size: 0.97em !important; }
-
-    .men_tel{ font-size: 0.76em !important; }
-
-    #esp1 { width: 180.8px !important;}
-
-    #esp2 { width: 200.8px !important;}
-
-    #esp3 { width: 235.8px !important;}
-
-    #esp4 { width: 160.8px !important;}
-}
-
-/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
-@media screen and (max-height:600px) and (orientation:landscape){    
-    h1 { font-size: 2.18em !important; }
-    header{ height: 76px !important;  }
-
-    li.gustos { 
-        margin: 4px 0 4px 0 !important;
-        text-align: left !important;
-    }
-    
-    ul.sep2 { 
-        padding: 0 0 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    ul.sep3 { 
-        padding: 0 4px 0 40px !important;
-        margin: 0 !important;
-    }
-    
-    header .pos-fin { margin: 0 0 0 2.75em !important; }
-
-    .vin_tel{ font-size: 0.97em !important; }
-
-    .men_tel{ font-size: 0.76em !important; }
-
-    #esp1 { width: 180.8px !important;}
-
-    #esp2 { width: 200.8px !important;}
-
-    #esp3 { width: 235.8px !important;}
-
-    #esp4 { width: 160.8px !important;}
-}
+@import url('Diseño_movil.css');
+@import url('Footer_y_Nav.css');
+@import url('Imagenes.css');
 
 /* ******************* */
 /*  Diseños del menu  */
 /* ******************* */
-
-nav{
-    background: #00AA88;
-    padding: 10px 8px 0 8px;
-    display: flex;
-    border-bottom: 3px solid #edf0f0;
-    box-shadow: 0px 0px 0px 6px #00AA88; 
-}
-
-summary.menu{ 
-    font-size: 1.2em; 
-    margin: 10px 0 17px 0;
-}
-  
-nav ul li:hover { background: #eca023; }
 
 #esp1{ 
     padding-left: 20px; 
@@ -132,22 +45,8 @@ header{
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
 }
 
-/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
-header .pos-ini {
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
-}
-
-/* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
-header .pos-fin {
-    margin: 0 0 0 6.82em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
-}
-
 /* creo la clase "icono" en la etiqueta HEADER para que tendra cierta carasteristica */
 header .icono {
-    position: absolute;
     width: 38px; /* ajusto el ancho que tendra esta clase */
     height: 38px; /* ajusto el alto que tendra esta clase */
     cursor: pointer;
@@ -266,40 +165,12 @@ details[open] > summary:first-of-type {
 	color: rgb(77, 208, 6);
 }
 
-/* se crea la clase "right" para que se ocupe de posisionar la imagen a la derecha*/
-.right {
-    float:right; 
-    height:auto; 
-    margin: 5px 20px 0 0;
-    max-width:100%;
-    border-radius:10px;
-}
-
-/* se crea la clase "left" para que se ocupe de posisionar la imagen a la izquierda*/
-.left {
-    float:left; 
-    height:auto; 
-    margin: 5px 0 0 20px;
-    max-width:100%;
-    border-radius:10px;
-}
-
-/* se crea la clase "center" para que se ocupe de posisionar la imagen al centro*/
-.center {
-    display:block;
-    height:auto;
-    margin:0px auto;
-    max-width:100%;
-    border-radius:10px;
-}
-
-/* se crea la clase "screenshot" para que se ocupe de crear un marco cverde para la imagen*/
-.screenshot {
-    border: 3px solid #228877;
-    border-radius:15px; 
-    max-width:100%; 	
-    height:auto;
-    aspect-ratio: attr(width) / attr(height);
+.scroll-container {
+    width: auto;           /* Ancho del contenedor */
+    height: 32em;          /* Alto del contenedor */
+    overflow: auto;         /* Activa la barra de desplazamiento */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 1px solid #ccc; /* Borde opcional para definir el contorno */
 }
 
 /* se crea caracteristicas para la etiqueta "ul" para controlar la lista*/
@@ -375,88 +246,6 @@ tr:nth-child(odd) {background-color: #E8E8E8;}
 
 /* La etiqueta "tr" (fila de la tabla) con propiedad "nth-child(even)" (filas pares) tendra un color en la tabla */
 tr:nth-child(even) {background-color: #FAFAFA;}
-
-/* se crea la ID "boxsort" para que se ocupe de posisionar la imagen dentro de la caja*/
-#boxsort{ text-align:center;}
-
-/* se crea la clase "box_matrimonio" para que se ocupe de posisionar el contenido para los perfiles*/
-.box_matrimonio {
-    max-width:180px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px;
-}
-
-/* La etiqueta "img" con la clase "box_matrimonio" para que se ocupe del tamaño de la imagen*/
-.box_matrimonio img { max-width:100%; height:auto; }
-
-.box_animales {
-    max-width:290px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px 20px;
-}
-
-.box_animales img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_gallinero" para que se ocupe de posisionar el contenido de las gallinas*/
-.box_gallinero {
-    max-width:200px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px;
-}
-
-.box_gallinero img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_inicio" para que se ocupe de posisionar el contenido de las opciones*/
-.box_inicio {
-    height:auto; 
-    display:inline-block; 
-}
-
-/* La etiqueta "img" con la clase "box_inicio" para que se ocupe del tamaño de la imagen*/
-.box_inicio img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
-.box_mascota {
-    max-width:200px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px 17px;
-}
-
-.box_mascota img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_aldeano" para que se ocupe de posisionar el contenido para las mascotas*/
-.box_aldeanos {
-    max-width:200px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px 17px;
-}
-
-.box_aldeanos img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_otro" para que se ocupe de posisionar el contenido para las mascotas*/
-.box_otro {
-    max-width:600px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px 17px;
-}
-
-.box_otro img { max-width:100%; height:auto; }
-
-/* se crea la clase "box_ganado" para que se ocupe de posisionar el contenido para el ganado*/
-.box_ganado {
-    max-width: 270px; 
-    height:auto; 
-    display:inline-block; 
-    margin:10px;
-}
-
-.box_ganado img { max-width:100%; height:auto; }
 
 /* Estas clases tienen la propiedad "before" (Antes) para que el guion tenga un icono de emociones */
 .fasina:before  {
@@ -550,37 +339,23 @@ tr:nth-child(even) {background-color: #FAFAFA;}
     font-size: 3em;
 }
 
-/* ************** */
-/*  FINAL CUADRO  */
-/* ************** */
-
-/* defino que solo la etiqueta "footer" tendra tendra ciertas caracteristicas */
-footer {
-    border-top:4px solid #E83;
-    width: 100%;  /* ajusto el tamaño que tendra esta clase */
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+/**/
+.pri:before  {
+    content: '\1F338'; /*(La guion sera un cereso)*/
+    font-size: 1.5em;
 }
 
-/* defino que solo la etiqueta "section" tendra tendra ciertas caracteristicas */
-section.pie{
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+.ve:before  {
+    content: '\1F31E'; /*(La guion sera un sol)*/
+    font-size: 1.5em;
 }
 
-/* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .copyright {
-    font-size: 22.5px; /* defino el tamaño del texto*/
-    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin:  14px auto 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+.ot:before  {
+    content: '\1F342'; /*(La guion sera una hoja)*/
+    font-size: 1.5em;
 }
 
-/* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .logo {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
-}
-
-/* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .enlace {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
+.in:before  { 
+    font-size: 1.5em; 
+    content: '\26C4'; /*(La guion sera una muñeco de nieve)*/
 }
