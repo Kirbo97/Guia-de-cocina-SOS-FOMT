@@ -100,10 +100,10 @@
 
 /* se crea la clase "box_menu" para que se ocupe de posisionar el contenido de las opciones*/
 .box_menu_lugares {
-    max-width:200px;
+    max-width:210px;
     height:auto; 
     display:inline-block; 
-    margin:12px 28px;
+    margin:12px 25px;
 }
 
 /* se crea la clase "box_mascota" para que se ocupe de posisionar el contenido para las mascotas*/
